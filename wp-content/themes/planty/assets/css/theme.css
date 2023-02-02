@@ -54,8 +54,9 @@ body {
     background-color: #3d9349;
 }
 
-.saumonacceuil {
-    border-radius: 10%;
+.saumonacceuil .wp-block-cover__background {
+    border-bottom-left-radius: 5% !important;
+    border-bottom-right-radius: 5% !important;
 }
 
 .bouttoncommander {
