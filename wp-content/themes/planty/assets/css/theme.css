@@ -1,7 +1,67 @@
-body {
-    background-color: red;
+#header {
+    display: flex;
+    justify-content: space-between;
 }
 
-h2 a {
-    color: brown;
+#header .logo a {
+    width: 250px;
+    height: auto;
+    display: block;
+    padding: 16px 20px;
+}
+
+#header .main {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+#header .main li a {
+    padding: 16px 20px;
+    display: block;
+}
+
+#header .main li:last-child a {
+    color: white;
+    background-color: #E0B9B4;
+}
+
+body {
+    font-family: syne;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#footer a {
+    display: block;
+    padding: 12px;
+}
+
+.plante {
+    background-image: url('../img/Group\ 5.png'), url('../img/Group\ 4\ \(2\).png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px 300px;
+    background-position: calc(80% - 400px) center, calc(106% - 400px) center;
+
+}
+
+.page-id-13 main {
+    background-color: #3d9349;
+}
+
+.saumonacceuil {
+    border-radius: 10%;
+}
+
+.bouttoncommander {
+    background-color: #E0B9B4;
+}
+
+#main #content-wrap {
+    padding: 0 !important;
 }
