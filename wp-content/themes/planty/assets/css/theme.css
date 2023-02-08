@@ -21,7 +21,7 @@
     display: block;
 }
 
-#header .main li:last-child a {
+#header .main li:nth-child(2) a {
     color: white;
     background-color: #E0B9B4;
 }
@@ -59,10 +59,24 @@ body {
     border-bottom-right-radius: 5% !important;
 }
 
+.saumonrencontrer .wp-block-cover__background {
+    border-bottom-left-radius: 5% !important;
+    border-bottom-right-radius: 5% !important;
+}
+
 .bouttoncommander {
     background-color: #E0B9B4;
 }
 
 #main #content-wrap {
     padding: 0 !important;
+}
+
+#header .main li:nth-child(2) {
+    order: 2;
+}
+
+.wpforms-submit-container {
+    display: flex;
+    justify-content: center;
 }

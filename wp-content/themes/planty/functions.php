@@ -10,7 +10,9 @@ add_filter('wp_nav_menu_items', 'add_extra_item_to_nav_menu', 1, 2);
 function add_extra_item_to_nav_menu($items, $args)
 {
     if (is_user_logged_in()) {
-        $items .= '<li><a href="' . get_permalink(get_option('woocommerce_myaccount_page_id')) . '">My Account</a></li>';
+
+        $items .= '<li><a href="' . get_admin_url() . '">Admin</a></li>';
     }
+
     return $items;
 }
