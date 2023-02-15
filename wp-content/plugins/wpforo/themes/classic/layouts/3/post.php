@@ -84,7 +84,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
                                         <div class="wpforo-box-l3a-top"></div>
                                         <div class="wpforo-box-l3a-lr">
 											<?php if( WPF()->usergroup->can( 'va' ) && wpforo_setting( 'profiles', 'avatars' ) ): $rsz = ''; ?>
-                                                <div class="wpforo-box-l3a-left"><?php echo WPF()->member->avatar( $member, 'alt="' . esc_attr( $member['display_name'] ) . '"', 96 ) ?></div>
+                                                <div class="wpforo-box-l3a-left"><?php echo wpforo_user_avatar( $member ) ?></div>
 											<?php else: $rsz = 'style="margin-left:10px;"'; endif; ?>
                                             <div class="wpforo-box-l3a-right" <?php echo $rsz; //This is a HTML content// ?>>
                                                 <span class="author-name"><?php wpforo_member_link( $member ); ?></span>&nbsp;<span><?php WPF()->member->show_online_indicator( $member['userid'] ) ?></span><br/>

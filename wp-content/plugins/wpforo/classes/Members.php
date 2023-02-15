@@ -80,6 +80,7 @@ class Members {
 			'group_color'         => '',
 
 			'profile_url' => '',
+			'dname'       => '',
 			'rating'      => [
 				'level'   => 0,
 				'percent' => 0,
@@ -183,6 +184,7 @@ class Members {
 
 		$member['title']       = trim( strip_tags( $member['title'] ) );
 		$member['profile_url'] = $this->get_profile_url( $member );
+        $member['dname']       = wpforo_user_dname( $member );
 
 		$member['fields'] = (array) ( wpforo_is_json( $member['fields'] ) ? json_decode( $member['fields'], true ) : $member['fields'] );
 		$member           = wpforo_array_ordered_intersect_key( $member, $this->default->member );
@@ -1475,60 +1477,67 @@ class Members {
 		return false;
 	}
 
-	public function _avatar( $member, $attr = '', $size = '' ) {
-		if( ! isset( $member['userid'] ) ) return '';
+	/**
+	 * @deprecated since 2.1.6 version instead of this use $this->_get_avatar() method
+	 */
+	public function _avatar( $user, $attr = '', $size = 96 ) {
+        return $this->_get_avatar( $user, $size, $attr );
+	}
 
-		$src    = $member['avatar'];
-		$userid = ( $member['userid'] ?: $member['user_email'] );
+	/**
+	 * @deprecated since 2.1.6 version instead of this use $this->get_avatar() method
+	 */
+    public function avatar( $user, $attr = '', $size = 96 ) {
+		return wpforo_ram_get( [ $this, '_avatar' ], $user, $attr, $size );
+	}
 
-		if( $src && wpforo_setting( 'profiles', 'custom_avatars' ) ) {
-			$src  = apply_filters( 'wpforo_avatar_url', $src, $member );
-			$attr = ( $attr ?: 'height="96" width="96"' );
-			$img  = '<img class="avatar" src="' . esc_url( $src ) . '" ' . $attr . ' />';
+	public function _get_avatar( $user, $size = 96, $attr = '' ) {
+		return $this->get_avatar_html( $this->get_avatar_url( $user ), $user, $size, $attr );
+	}
+
+	public function get_avatar( $user, $size = 96, $attr = '' ) {
+		return wpforo_ram_get( [ $this, '_get_avatar' ], $user, $size, $attr );
+	}
+
+	public function _get_avatar_url( $user ) {
+		$cache = WPF()->cache->on( 'avatar' );
+
+		if ( is_scalar( $user ) ) {
+			$userid       = wpforo_bigintval( $user );
+			$cache_avatar = apply_filters( 'wpforo_avatar_cache', true, $userid );
+			if ( $cache && $cache_avatar && $avatar_url = WPF()->cache->get_item( $userid, 'avatar' ) ) {
+				return str_replace( '#', '', (string) $avatar_url );
+			}
+			$avatar_url = (string) WPF()->db->get_var( WPF()->db->prepare( "SELECT `avatar` FROM `" . WPF()->tables->profiles . "` WHERE `userid` = %d", wpforo_bigintval( $userid ) ) );
 		} else {
-			$img = ( $size ) ? get_avatar( $userid, $size ) : get_avatar( $userid );
-			if( $attr ) $img = str_replace( '<img', '<img ' . $attr, $img );
+			$avatar_url = (string) wpfval( $user, 'avatar' );
+			$userid     = wpforo_bigintval( wpfval( $user, 'userid' ) );
 		}
 
-		return $img;
-	}
+		if ( $cache && $userid ) {
+			WPF()->cache->create( 'item', [ $userid => $avatar_url ?: '#' ], 'avatar' );
+		}
 
-	public function avatar( $member, $attr = '', $size = '' ) {
-		return wpforo_ram_get( [ $this, '_avatar' ], $member, $attr, $size );
-	}
-
-	public function _get_avatar( $userid, $attr = '', $size = '' ) {
-		return $this->get_avatar_html( $this->get_avatar_url( $userid ), $userid, $attr, $size );
-	}
-
-	public function get_avatar( $userid, $attr = '', $size = '' ) {
-		return wpforo_ram_get( [ $this, '_get_avatar' ], $userid, $attr, $size );
-	}
-
-	public function _get_avatar_url( $userid ) {
-        $cache = WPF()->cache->on('avatar');
-        $cache_avatar = apply_filters( 'wpforo_avatar_cache', true, $userid );
-        if( $cache && $cache_avatar && $avatar_url = WPF()->cache->get_item( $userid, 'avatar') ) {
-            return str_replace('#', '', (string) $avatar_url );
-        }
-		$avatar_url = WPF()->db->get_var( WPF()->db->prepare( "SELECT `avatar` FROM `" . WPF()->tables->profiles . "` WHERE `userid` = %d", wpforo_bigintval( $userid ) ) );
-        if( $cache && $userid ) {
-            $cached_avatar_url = ( $avatar_url ) ? : '#';
-            WPF()->cache->create( 'item', [ $userid => $cached_avatar_url ], 'avatar' );
-        }
 		return apply_filters( 'wpforo_avatar_url', $avatar_url, $userid );
 	}
 
-	public function get_avatar_url( $userid ) {
-		return wpforo_ram_get( [ $this, '_get_avatar_url' ], $userid );
+	public function get_avatar_url( $user ) {
+		return wpforo_ram_get( [ $this, '_get_avatar_url' ], $user );
 	}
 
-	public function get_avatar_html( $url, $userid = 0, $attr = '', $size = '' ) {
+	public function get_avatar_html( $url, $user = [], $size = 96, $attr = '' ) {
+        $size = intval( $size );
 		if( $url && wpforo_setting( 'profiles', 'custom_avatars' ) ) {
-			$attr = ( $attr ?: 'height="96" width="96"' );
-			$img  = '<img class="avatar" src="' . esc_url( $url ) . '" ' . $attr . ' />';
+			$url  = apply_filters( 'wpforo_avatar_url', $url, $user );
+			$dname = ! is_scalar( $user ) ? wpforo_user_dname( $user ) : $this->get_member( $user )['dname'];
+            if( strpos( $attr, 'alt=' )    === false ) $attr .= ' ' . sprintf('alt="%1$s"',    esc_attr( $dname ));
+            if( strpos( $attr, 'title=' )  === false ) $attr .= ' ' . sprintf('title="%1$s"',  esc_attr( $dname ));
+            if( strpos( $attr, 'height=' ) === false ) $attr .= ' ' . sprintf('height="%1$d"', $size);
+            if( strpos( $attr, 'width=' )  === false ) $attr .= ' ' . sprintf('width="%1$d"',  $size);
+			$img  = '<img class="avatar" src="' . esc_url( $url ) . '" ' . $attr . ' >';
 		} else {
-			$img = ( $size ) ? get_avatar( $userid, $size ) : get_avatar( $userid );
+			$userid = is_scalar( $user ) ? wpforo_bigintval( $user ) : (wpforo_bigintval( wpfval( $user, 'userid' ) ) ?: (string) wpfval( $user, 'user_email' ));
+			$img = get_avatar( $userid, $size );
 			if( $attr ) $img = str_replace( '<img', '<img ' . $attr, $img );
 		}
 

@@ -224,7 +224,7 @@ if( $type === 'topics' ) {
                         <tr class="wpf-ttr <?php wpforo_unread( $topic['topicid'], 'topic' ); ?>">
                             <td class="wpf-spost-avatar">
 								<?php if( WPF()->usergroup->can( 'va' ) && wpforo_setting( 'profiles', 'avatars' ) ): ?>
-									<?php echo WPF()->member->avatar( $member, 'alt="' . esc_attr( $member['display_name'] ) . '"', 30 ) ?>
+									<?php echo wpforo_user_avatar( $member, 30 ) ?>
 								<?php endif; ?>
                             </td>
                             <td class="wpf-spost-title">
@@ -285,7 +285,7 @@ if( $type === 'topics' ) {
                         <tr class="wpf-ttr <?php wpforo_unread( $post['topicid'], 'post', true, $post['postid'] ); ?>">
                             <td class="wpf-spost-avatar">
 								<?php if( WPF()->usergroup->can( 'va' ) && wpforo_setting( 'profiles', 'avatars' ) ): ?>
-									<?php echo WPF()->member->avatar( $member, 'alt="' . esc_attr( $member['display_name'] ) . '"', 40 ) ?>
+									<?php echo wpforo_user_avatar( $member, 40 ) ?>
 								<?php endif; ?>
                             </td>
                             <td class="wpf-spost-title">

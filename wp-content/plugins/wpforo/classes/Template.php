@@ -1738,7 +1738,7 @@ class Template {
 					$short_url     = esc_url( wpforo_post( $postid, 'short_url' ) );
 					$title         = esc_attr( wpforo_phrase( 'Post link', false ) );
 					$button_html[] = sprintf(
-						'<span class="wpf-action" title="%1$s" data-copy-wpf-furl="%2$s" data-copy-wpf-shurl="%3$s"><i class="fas fa-link wpfsx"></i></span>',
+						'<span class="wpf-action" data-copy-wpf-furl="%2$s" data-copy-wpf-shurl="%3$s" wpf-tooltip="' . esc_attr( wpforo_phrase( 'Post link', false ) ) . '" wpf-tooltip-position="left"><i class="fas fa-link wpfsx"></i></span>',
 						$title,
 						$full_url,
 						$short_url

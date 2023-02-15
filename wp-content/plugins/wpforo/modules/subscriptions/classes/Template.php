@@ -197,7 +197,7 @@ class Template {
 			}
 		}
 
-		return '';
+        return '<span class="wpf-subscribe-topic">&nbsp;</span>';
 	}
 
 	public function topic_form_checkbox( $forum ) {

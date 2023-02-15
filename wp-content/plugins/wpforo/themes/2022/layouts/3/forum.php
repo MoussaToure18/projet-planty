@@ -141,7 +141,7 @@ $cover_styles = wpforo_get_forum_cover_styles( $cat );
                                             <?php wpforo_topic_title($topic, $topic_url, '{p}{au}{tc}{/a}{n}', true, '', wpforo_setting( 'forums', 'layout_qa_intro_topics_length' )) ?>
                                             <div class="wpforo-topic-author">
                                                 <?php if( WPF()->usergroup->can('va') && wpforo_setting( 'profiles', 'avatars' ) ): ?>
-                                                    <?php echo WPF()->member->avatar($member, 'alt="'.esc_attr($member['display_name']).'"', 40) ?>
+                                                    <?php echo wpforo_user_avatar($member, 40) ?>
                                                 <?php endif; ?>
                                                 <span class="wpforo-last-topic-info wpfcl-2">
                                                     <?php wpforo_member_link($member, 'by'); ?>, <?php wpforo_date($topic['modified']); ?>

@@ -356,12 +356,12 @@ class Reactions {
      */
     public function _get_count( $args = [], $operator = 'AND' ) {
         $reactions = $this->get_reaction_cache( $args );
-        if( !is_null( $reactions ) ) return count( (array) $reactions );
+        if( !is_null( $reactions ) ) return (int) count( (array) $reactions );
 
         // If there is no reaction cache it creates a new cache file
         // The cache is based on postid, each cache item contains all reactions of the postid
         $reactions = $this->get_post_reactions_and_cache( $args );
-        if( !is_null( $reactions ) ) return count( $reactions );
+        if( !is_null( $reactions ) ) return (int) count( $reactions );
 
         return (int) WPF()->db->get_var( $this->build_sql_select( $args, 'COUNT(*)', $operator ) );
     }
@@ -393,9 +393,9 @@ class Reactions {
     }
 
     public function get_post_reactions_user_dnames( $postid ) {
-        return WPF()->db->get_results(
+        $rows = WPF()->db->get_results(
             WPF()->db->prepare(
-                "SELECT u.`ID` as userid, u.`display_name` 
+                "SELECT u.`ID` as userid, u.`display_name`, u.`user_nicename` 
 					FROM `" . WPF()->db->users . "` u 
 					INNER JOIN `" . WPF()->tables->reactions . "` r ON r.`userid` = u.`ID`
 					WHERE r.`postid` = %d 
@@ -405,6 +405,13 @@ class Reactions {
             ),
             ARRAY_A
         );
+
+		return array_map(
+			function( $row ){
+				$row['dname'] = wpforo_user_dname( $row );
+				return $row;
+			}, $rows
+		);
     }
 
     public function get_user_reaction( $postid, $userid = 0 ){

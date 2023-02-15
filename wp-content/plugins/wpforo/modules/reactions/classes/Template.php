@@ -69,26 +69,32 @@ class Template {
 		$return      = '';
 
 		if( $l_count ) {
-			if( $l_usernames[0]['userid'] == WPF()->current_userid ) $l_usernames[0]['display_name'] = wpforo_phrase( 'You', false );
-			if( $l_count == 1 ) {
-				$return = sprintf( wpforo_phrase( '%s reacted', false ), '<a href="' . esc_url( WPF()->member->get_profile_url( $l_usernames[0]['userid'] ) ) . '">' . esc_html( $l_usernames[0]['display_name'] ) . '</a>' );
+			if( $l_usernames[0]['userid'] == WPF()->current_userid ) $l_usernames[0]['dname'] = wpforo_phrase( 'You', false );
+			if( $l_count === 1 ) {
+				$return = sprintf(
+					wpforo_phrase( '%s reacted', false ),
+					wpforo_member_link( WPF()->member->get_member( $l_usernames[0]['userid'] ), '', 30, '', false, $l_usernames[0]['dname'] )
+				);
 			} elseif( $l_count == 2 ) {
-				$return = sprintf( wpforo_phrase( '%s and %s reacted', false ), '<a href="' . esc_url( WPF()->member->get_profile_url( $l_usernames[0]['userid'] ) ) . '">' . esc_html( $l_usernames[0]['display_name'] ) . '</a>', '<a href="' . esc_url( WPF()->member->get_profile_url( $l_usernames[1]['userid'] ) ) . '">' . esc_html( $l_usernames[1]['display_name'] ) . '</a>' );
-			} elseif( $l_count == 3 ) {
+				$return = sprintf(
+					wpforo_phrase( '%s and %s reacted', false ),
+					wpforo_member_link( WPF()->member->get_member( $l_usernames[0]['userid'] ), '', 30, '', false, $l_usernames[0]['dname'] ),
+					wpforo_member_link( WPF()->member->get_member( $l_usernames[1]['userid'] ), '', 30, '', false, $l_usernames[1]['dname'] )
+				);
+			} elseif( $l_count === 3 ) {
 				$return = sprintf(
 					wpforo_phrase( '%s, %s and %s reacted', false ),
-					'<a href="' . esc_url( WPF()->member->get_profile_url( $l_usernames[0]['userid'] ) ) . '">' . esc_html( $l_usernames[0]['display_name'] ) . '</a>',
-					'<a href="' . esc_url( WPF()->member->get_profile_url( $l_usernames[1]['userid'] ) ) . '">' . esc_html( $l_usernames[1]['display_name'] ) . '</a>',
-					'<a href="' . esc_url( WPF()->member->get_profile_url( $l_usernames[2]['userid'] ) ) . '">' . esc_html( $l_usernames[2]['display_name'] ) . '</a>'
+					wpforo_member_link( WPF()->member->get_member( $l_usernames[0]['userid'] ), '', 30, '', false, $l_usernames[0]['dname'] ),
+					wpforo_member_link( WPF()->member->get_member( $l_usernames[1]['userid'] ), '', 30, '', false, $l_usernames[1]['dname'] ),
+					wpforo_member_link( WPF()->member->get_member( $l_usernames[2]['userid'] ), '', 30, '', false, $l_usernames[2]['dname'] )
 				);
 			} elseif( $l_count >= 4 ) {
-				$l_count = $l_count - 3;
 				$return  = sprintf(
 					wpforo_phrase( '%s, %s, %s and %d people reacted', false ),
-					'<a href="' . esc_url( WPF()->member->get_profile_url( $l_usernames[0]['userid'] ) ) . '">' . esc_html( $l_usernames[0]['display_name'] ) . '</a>',
-					'<a href="' . esc_url( WPF()->member->get_profile_url( $l_usernames[1]['userid'] ) ) . '">' . esc_html( $l_usernames[1]['display_name'] ) . '</a>',
-					'<a href="' . esc_url( WPF()->member->get_profile_url( $l_usernames[2]['userid'] ) ) . '">' . esc_html( $l_usernames[2]['display_name'] ) . '</a>',
-					$l_count
+					wpforo_member_link( WPF()->member->get_member( $l_usernames[0]['userid'] ), '', 30, '', false, $l_usernames[0]['dname'] ),
+					wpforo_member_link( WPF()->member->get_member( $l_usernames[1]['userid'] ), '', 30, '', false, $l_usernames[1]['dname'] ),
+					wpforo_member_link( WPF()->member->get_member( $l_usernames[2]['userid'] ), '', 30, '', false, $l_usernames[2]['dname'] ),
+					( $l_count - 3 )
 				);
 			}
 		}

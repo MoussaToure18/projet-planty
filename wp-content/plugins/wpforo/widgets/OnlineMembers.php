@@ -36,13 +36,9 @@ class OnlineMembers extends WP_Widget {
 						<div class="wpforo-list-item">';
                             foreach( $online_members as $member ) {
                                 if( $instance['display_avatar'] ): ?>
-                                    <a href="<?php echo esc_url( WPF()->member->get_profile_url( $member['userid'] ) ) ?>"
-                                       class="onlineavatar">
-                                        <?php echo WPF()->member->get_avatar( $member['userid'], 'style="width:95%;" class="avatar" title="' . esc_attr( $member['display_name'] ) . '"' ); ?>
-                                    </a>
+	                                <?php wpforo_member_link( $member, '', 96, 'onlineavatar', true, 'avatar', 'style="width:95%;" class="avatar"' ) ?>
                                 <?php else: ?>
-                                    <a href="<?php echo esc_url( WPF()->member->get_profile_url( $member['userid'] ) ) ?>"
-                                       class="onlineuser"><?php echo esc_html( $member['display_name'] ) ?></a>
+                                    <?php wpforo_member_link( $member, '', 30, 'onlineuser' ) ?>
                                 <?php endif; ?>
                                 <?php
                             }

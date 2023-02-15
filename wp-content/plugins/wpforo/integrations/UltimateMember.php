@@ -161,7 +161,7 @@ class UltimateMember {
 								<?php $members = WPF()->topic->members( $topic['topicid'], 3 ); ?>
 								<?php if( ! empty( $members ) ): foreach( $members as $member ): ?>
 									<?php if( ! empty( $member ) ): ?>
-                                        <a href="<?php echo um_user_profile_url( $member['userid'] ) ?>" title="<?php echo esc_attr( um_get_display_name( $member['userid'] ) ); ?>"><?php echo WPF()->member->avatar( $member, 'alt="' . esc_attr( $member['display_name'] ) . '"', 30 ) ?></a>
+                                        <a href="<?php echo um_user_profile_url( $member['userid'] ) ?>" title="<?php echo esc_attr( um_get_display_name( $member['userid'] ) ); ?>"><?php echo wpforo_user_avatar( $member, 30 ) ?></a>
 									<?php endif; ?>
 								<?php endforeach; endif; ?>
                             </td>

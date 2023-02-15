@@ -81,7 +81,7 @@ class RecentTopics extends WP_Widget {
                         <div class="wpf-clear"></div>
                     </div>
                 </li>',
-				( $print_avatar ? sprintf( '<div class="wpforo-list-item-left">%1$s</div>', WPF()->member->avatar( $member ) ) : '' ),
+				( $print_avatar ? sprintf( '<div class="wpforo-list-item-left">%1$s</div>', wpforo_user_avatar( $member ) ) : '' ),
 				( !$print_avatar ? 'style="width: 100%"' : '' ),
 				( wpfval( $instance, 'goto_unread' ) ?
 					wpforo_topic_title( $topic, $topic_url, '{p}{au}{t}{/a}', false ) .

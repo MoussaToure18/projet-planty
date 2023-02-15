@@ -3,8 +3,8 @@ Contributors: themeum
 Donate link: https://www.themeum.com
 Tags: blocks, gutenberg, gutenberg blocks, editor, block, page builder
 Requires at least: 5.3
-Tested up to: 6.0.1
-Stable tag: 1.8.4
+Tested up to: 6.1.1
+Stable tag: 1.8.5
 Requires PHP: 7.0
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -238,6 +238,12 @@ You can report bugs on the [support forum here](https://wordpress.org/support/pl
 
 
 == Changelog ==
+
+= 1.8.5 =
+New: Jetpack compatibility is introduced
+Update: All Stylesheet and Script libraries are updated to the latest version
+Update: More security improvements is introduced
+Fix: Form Builder had an issue with the Recipient Email input field
 
 = 1.8.4 =
 Update: Implemented more security update for improved security

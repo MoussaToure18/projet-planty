@@ -20,7 +20,7 @@ function wpforo_qa_comment_template($comment, $forum = array(), $topic = array()
                     <div class="wpforo-comment-top">
 	                      <span class="wpfcl-0">
                               <?php if(  WPF()->usergroup->can('va') && wpforo_setting( 'profiles', 'avatars' ) ) : ?>
-                                  <span class="wpforo-comment-avatar"><?php echo WPF()->member->avatar($comment_member, 'alt="'.esc_attr($comment_member['display_name']).'"', 36) ?></span>
+                                  <span class="wpforo-comment-avatar"><?php echo wpforo_user_avatar($comment_member, 36) ?></span>
                               <?php endif; ?>
                               <?php wpforo_member_link($comment_member); ?>
                               <?php wpforo_topic_starter($topic, $comment) ?>

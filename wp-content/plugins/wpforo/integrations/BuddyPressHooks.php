@@ -165,7 +165,7 @@ function wpforo_bp_forums_screen_topics() {
 								<?php $members = WPF()->topic->members( $topic['topicid'], 3 ); ?>
 								<?php if( ! empty( $members ) ): foreach( $members as $member ): ?>
 									<?php if( ! empty( $member ) ): ?>
-                                        <a href="<?php echo bp_core_get_user_domain( $member['userid'] ) ?>" title="<?php echo esc_attr( bp_core_get_user_displayname( $member['userid'] ) ); ?>"><?php echo WPF()->member->avatar( $member, 'alt="' . esc_attr( $member['display_name'] ) . '"', 30 ) ?></a>
+                                        <a href="<?php echo bp_core_get_user_domain( $member['userid'] ) ?>" title="<?php echo esc_attr( bp_core_get_user_displayname( $member['userid'] ) ); ?>"><?php echo wpforo_user_avatar( $member, 30 ) ?></a>
 									<?php endif; ?>
 								<?php endforeach; endif; ?>
                             </td>

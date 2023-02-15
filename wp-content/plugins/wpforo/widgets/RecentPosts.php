@@ -79,7 +79,7 @@ class RecentPosts extends WP_Widget {
                         <div class="wpforo-list-item ">
 							<?php if( $print_avatar ): ?>
                                 <div class="wpforo-list-item-left">
-									<?php echo WPF()->member->avatar( $member ); ?>
+									<?php echo wpforo_user_avatar( $member ); ?>
                                 </div>
 							<?php endif; ?>
                             <div class="wpforo-list-item-right" <?php if( ! $print_avatar ): ?> style="width: 100%"<?php endif; ?>>
@@ -95,7 +95,7 @@ class RecentPosts extends WP_Widget {
                                 </p>
                                 <p class="posttext"><?php echo esc_html( wpforo_text( $post['body'], $instance['excerpt_length'], false ) ); ?></p>
                                 <p class="postuser"><?php wpforo_phrase( 'by' ) ?> <?php wpforo_member_link( $member ) ?>
-                                    , <?php esc_html( wpforo_date( $post['created'] ) ) ?></p>
+                                    , <span style="white-space: nowrap;"><?php esc_html( wpforo_date( $post['created'] ) ) ?></span></p>
                             </div>
                             <div class="wpf-clear"></div>
                         </div>
@@ -126,7 +126,7 @@ class RecentPosts extends WP_Widget {
                         <div class="wpforo-list-item">
 							<?php if( $print_avatar ): ?>
                                 <div class="wpforo-list-item-left">
-									<?php echo WPF()->member->avatar( $member ); ?>
+									<?php echo wpforo_user_avatar( $member ); ?>
                                 </div>
 							<?php endif; ?>
                             <div class="wpforo-list-item-right" <?php if( ! $print_avatar ): ?> style="width:100%"<?php endif; ?>>
@@ -142,7 +142,7 @@ class RecentPosts extends WP_Widget {
                                 </p>
                                 <p class="posttext"><?php echo esc_html( wpforo_text( $post['body'], $instance['excerpt_length'], false ) ); ?></p>
                                 <p class="postuser"><?php wpforo_phrase( 'by' ) ?> <?php wpforo_member_link( $member ) ?>
-                                    , <?php esc_html( wpforo_date( $post['created'] ) ) ?></p>
+                                    , <span style="white-space: nowrap;"><?php esc_html( wpforo_date( $post['created'] ) ) ?></span></p>
                             </div>
                             <div class="wpf-clear"></div>
                         </div>

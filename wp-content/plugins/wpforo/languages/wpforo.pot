@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Forum - wpForo\n"
-"POT-Creation-Date: 2022-11-09 00:21+0400\n"
+"POT-Creation-Date: 2023-01-31 14:32+0400\n"
 "PO-Revision-Date: 2016-06-28 21:09+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -123,7 +123,7 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
-#: admin/includes/deactivation-dialog.php:142 includes/hooks.php:1299
+#: admin/includes/deactivation-dialog.php:142 includes/hooks.php:1302
 msgid "Please provide more information"
 msgstr ""
 
@@ -148,7 +148,7 @@ msgid "Overview"
 msgstr ""
 
 #: admin/index.php:54 admin/index.php:201 admin/pages/dashboard.php:25
-#: admin/tools-tabs/misc.php:67 includes/hooks.php:2233 includes/hooks.php:2437
+#: admin/tools-tabs/misc.php:67 includes/hooks.php:2238 includes/hooks.php:2442
 #: includes/phrases.php:309 integrations/BuddyPress.php:12
 #: integrations/BuddyPress.php:44 integrations/BuddyPress.php:117
 #: widgets/Forums.php:23
@@ -156,55 +156,55 @@ msgid "Forums"
 msgstr ""
 
 #: admin/index.php:59 admin/index.php:151 admin/index.php:206
-#: admin/pages/settings.php:163 includes/hooks.php:2249 includes/hooks.php:2453
-#: includes/hooks.php:2558
+#: admin/pages/settings.php:163 includes/hooks.php:2254 includes/hooks.php:2458
+#: includes/hooks.php:2563
 msgid "Settings"
 msgstr ""
 
-#: admin/index.php:64 admin/index.php:211 includes/hooks.php:2267
-#: includes/hooks.php:2471
+#: admin/index.php:64 admin/index.php:211 includes/hooks.php:2272
+#: includes/hooks.php:2476
 msgid "Moderation"
 msgstr ""
 
-#: admin/index.php:69 admin/index.php:216 includes/hooks.php:2317
-#: includes/hooks.php:2480 includes/phrases.php:791
+#: admin/index.php:69 admin/index.php:216 includes/hooks.php:2322
+#: includes/hooks.php:2485 includes/phrases.php:791
 msgid "Phrases"
 msgstr ""
 
-#: admin/index.php:74 admin/index.php:221 includes/hooks.php:2258
-#: includes/hooks.php:2462 includes/phrases.php:916
+#: admin/index.php:74 admin/index.php:221 includes/hooks.php:2263
+#: includes/hooks.php:2467 includes/phrases.php:916
 msgid "Tools"
 msgstr ""
 
 #: admin/index.php:82 admin/index.php:136 admin/pages/board.php:16
-#: includes/hooks.php:10 includes/hooks.php:2501
+#: includes/hooks.php:10 includes/hooks.php:2506
 msgid "Boards"
 msgstr ""
 
-#: admin/index.php:86 admin/index.php:140 includes/hooks.php:2276
-#: includes/hooks.php:2517
+#: admin/index.php:86 admin/index.php:140 includes/hooks.php:2281
+#: includes/hooks.php:2522
 msgid "Accesses"
 msgstr ""
 
 #: admin/index.php:90 admin/index.php:144 admin/pages/usergroup.php:12
-#: admin/pages/usergroup.php:160 includes/hooks.php:2301 includes/hooks.php:2533
+#: admin/pages/usergroup.php:160 includes/hooks.php:2306 includes/hooks.php:2538
 msgid "Usergroups"
 msgstr ""
 
 #: admin/index.php:93 admin/index.php:147 admin/pages/dashboard.php:37
 #: admin/pages/member.php:10 admin/pages/usergroup.php:37
-#: admin/tools-tabs/misc.php:87 includes/hooks.php:2292 includes/hooks.php:2549
+#: admin/tools-tabs/misc.php:87 includes/hooks.php:2297 includes/hooks.php:2554
 #: includes/phrases.php:364
 msgid "Members"
 msgstr ""
 
-#: admin/index.php:97 admin/index.php:156 includes/hooks.php:2333
-#: includes/hooks.php:2567 includes/phrases.php:792
+#: admin/index.php:97 admin/index.php:156 includes/hooks.php:2338
+#: includes/hooks.php:2572 includes/phrases.php:792
 msgid "Themes"
 msgstr ""
 
 #: admin/index.php:102 admin/index.php:161 admin/pages/board.php:116
-#: admin/pages/settings.php:22 includes/hooks.php:2342 includes/hooks.php:2576
+#: admin/pages/settings.php:22 includes/hooks.php:2347 includes/hooks.php:2581
 #: includes/phrases.php:211
 msgid "Addons"
 msgstr ""
@@ -243,7 +243,7 @@ msgid "Edit"
 msgstr ""
 
 #: admin/listtables/Boards.php:86 admin/listtables/Moderations.php:94
-#: admin/pages/forum.php:273 admin/pages/usergroup.php:78 classes/Forums.php:854
+#: admin/pages/forum.php:283 admin/pages/usergroup.php:78 classes/Forums.php:855
 #: includes/phrases.php:541
 msgid "View"
 msgstr ""
@@ -258,10 +258,10 @@ msgstr ""
 
 #: admin/listtables/Boards.php:88 admin/listtables/Members.php:106
 #: admin/listtables/Members.php:263 admin/listtables/Moderations.php:103
-#: admin/listtables/Moderations.php:208 admin/pages/forum.php:272
+#: admin/listtables/Moderations.php:208 admin/pages/forum.php:282
 #: admin/pages/themes.php:68 admin/pages/usergroup.php:76
 #: admin/pages/usergroup.php:295 admin/settings/antispam.php:64
-#: includes/hooks.php:1281 includes/phrases.php:252
+#: includes/hooks.php:1284 includes/phrases.php:252
 msgid "Delete"
 msgstr ""
 
@@ -341,7 +341,7 @@ msgstr ""
 
 #: admin/listtables/Members.php:176 admin/listtables/Moderations.php:151
 #: admin/listtables/Phrases.php:133 admin/pages/usergroup.php:41
-#: classes/Settings.php:203
+#: classes/Settings.php:204
 msgid "ID"
 msgstr ""
 
@@ -422,10 +422,10 @@ msgstr ""
 msgid "Are you sure you want to DELETE this item?"
 msgstr ""
 
-#: admin/listtables/Moderations.php:152 classes/Settings.php:204
-#: includes/phrases.php:520 widgets/Forums.php:85 widgets/OnlineMembers.php:87
-#: widgets/RecentPosts.php:231 widgets/RecentTopics.php:152 widgets/Search.php:63
-#: widgets/Tags.php:78
+#: admin/listtables/Moderations.php:152 classes/Settings.php:205
+#: includes/phrases.php:520 widgets/Forums.php:96 widgets/OnlineMembers.php:88
+#: widgets/RecentPosts.php:243 widgets/RecentTopics.php:163 widgets/Search.php:76
+#: widgets/Tags.php:89
 msgid "Title"
 msgstr ""
 
@@ -495,16 +495,16 @@ msgid ""
 msgstr ""
 
 #: admin/pages/accesses.php:21 admin/pages/board.php:152 admin/pages/forum.php:56
-#: admin/pages/forum.php:238 admin/pages/forum.php:285 admin/pages/forum.php:325
-#: admin/pages/forum.php:401 admin/pages/forum.php:409 admin/pages/phrase.php:167
+#: admin/pages/forum.php:248 admin/pages/forum.php:295 admin/pages/forum.php:335
+#: admin/pages/forum.php:411 admin/pages/forum.php:419 admin/pages/phrase.php:167
 #: admin/pages/usergroup.php:30 admin/pages/usergroup.php:36
 #: admin/pages/usergroup.php:342 admin/settings/board.php:16
 #: admin/settings/general.php:24 admin/settings/styles.php:12
-#: classes/Settings.php:2877
+#: classes/Settings.php:2880
 msgid "Read the documentation"
 msgstr ""
 
-#: admin/pages/accesses.php:29 includes/hooks.php:2283 includes/hooks.php:2524
+#: admin/pages/accesses.php:29 includes/hooks.php:2288 includes/hooks.php:2529
 #: includes/phrases.php:207
 msgid "Add New Forum Access"
 msgstr ""
@@ -531,7 +531,7 @@ msgstr ""
 msgid "Admin"
 msgstr ""
 
-#: admin/pages/accesses.php:68 classes/Forums.php:842 includes/phrases.php:567
+#: admin/pages/accesses.php:68 classes/Forums.php:843 includes/phrases.php:567
 msgid "edit"
 msgstr ""
 
@@ -541,7 +541,7 @@ msgid ""
 "this access will lost all forum permissions."
 msgstr ""
 
-#: admin/pages/accesses.php:75 classes/Forums.php:848 includes/phrases.php:566
+#: admin/pages/accesses.php:75 classes/Forums.php:849 includes/phrases.php:566
 msgid "delete"
 msgstr ""
 
@@ -703,7 +703,7 @@ msgstr ""
 msgid "one URL per line"
 msgstr ""
 
-#: admin/pages/dashboard.php:7 includes/hooks.php:2225
+#: admin/pages/dashboard.php:7 includes/hooks.php:2230
 msgid "Forum Dashboard"
 msgstr ""
 
@@ -711,11 +711,11 @@ msgstr ""
 msgid "Board Statistic"
 msgstr ""
 
-#: admin/pages/dashboard.php:29 classes/Forums.php:834 includes/phrases.php:524
+#: admin/pages/dashboard.php:29 classes/Forums.php:835 includes/phrases.php:524
 msgid "Topics"
 msgstr ""
 
-#: admin/pages/dashboard.php:33 classes/Forums.php:834 includes/phrases.php:418
+#: admin/pages/dashboard.php:33 classes/Forums.php:835 includes/phrases.php:418
 msgid "Posts"
 msgstr ""
 
@@ -801,11 +801,11 @@ msgid ""
 "\"wp_options\" table and .htaccess-bk-{sec} backup file in the root directory."
 msgstr ""
 
-#: admin/pages/forum.php:15 includes/functions.php:783 includes/phrases.php:487
+#: admin/pages/forum.php:15 includes/functions.php:779 includes/phrases.php:487
 msgid "Show on screen"
 msgstr ""
 
-#: admin/pages/forum.php:17 admin/pages/forum.php:238 includes/phrases.php:299
+#: admin/pages/forum.php:17 admin/pages/forum.php:248 includes/phrases.php:299
 msgid "Forum Options"
 msgstr ""
 
@@ -829,7 +829,7 @@ msgstr ""
 msgid "Number of Columns"
 msgstr ""
 
-#: admin/pages/forum.php:34 includes/functions.php:797 includes/phrases.php:460
+#: admin/pages/forum.php:34 includes/functions.php:793 includes/phrases.php:460
 msgid "Screen Options"
 msgstr ""
 
@@ -867,73 +867,69 @@ msgstr ""
 msgid "Enter forum title here"
 msgstr ""
 
-#: admin/pages/forum.php:228 includes/phrases.php:272
-msgid "Enter description here . . ."
-msgstr ""
-
-#: admin/pages/forum.php:229 includes/phrases.php:515
+#: admin/pages/forum.php:239 includes/phrases.php:515
 msgid ""
 "This is a forum description. This content will be displayed under forum title "
 "on the forum list."
 msgstr ""
 
-#: admin/pages/forum.php:241 includes/phrases.php:407
+#: admin/pages/forum.php:251 includes/phrases.php:407
 msgid "Parent Forum"
 msgstr ""
 
-#: admin/pages/forum.php:244 includes/phrases.php:390
+#: admin/pages/forum.php:254 includes/phrases.php:390
 msgid "No parent"
 msgstr ""
 
-#: admin/pages/forum.php:249 includes/phrases.php:532
+#: admin/pages/forum.php:259 includes/phrases.php:532
 msgid "Use as Category"
 msgstr ""
 
-#: admin/pages/forum.php:251 includes/phrases.php:238
+#: admin/pages/forum.php:261 includes/phrases.php:238
 msgid "Category Layout"
 msgstr ""
 
-#: admin/pages/forum.php:260 includes/phrases.php:388
+#: admin/pages/forum.php:270 includes/phrases.php:388
 msgid "No layout found."
 msgstr ""
 
-#: admin/pages/forum.php:268 admin/pages/forum.php:276 includes/phrases.php:420
+#: admin/pages/forum.php:278 admin/pages/forum.php:286 includes/phrases.php:420
 msgid "Publish"
 msgstr ""
 
-#: admin/pages/forum.php:272 includes/phrases.php:223
+#: admin/pages/forum.php:282 includes/phrases.php:223
 msgid "Are you sure you want to delete this forum?"
 msgstr ""
 
-#: admin/pages/forum.php:274 admin/pages/phrase.php:108 includes/phrases.php:529
+#: admin/pages/forum.php:284 admin/pages/phrase.php:108 includes/phrases.php:529
 msgid "Update"
 msgstr ""
 
-#: admin/pages/forum.php:285
+#: admin/pages/forum.php:295
 msgid "Forum Permissions"
 msgstr ""
 
-#: admin/pages/forum.php:294
+#: admin/pages/forum.php:304
 msgid "Additional Options"
 msgstr ""
 
-#: admin/pages/forum.php:297
+#: admin/pages/forum.php:307
 msgid "Forum Color"
 msgstr ""
 
-#: admin/pages/forum.php:318
+#: admin/pages/forum.php:328
 msgid "Current layout and cover image of this category"
 msgstr ""
 
-#: admin/pages/forum.php:320
+#: admin/pages/forum.php:330
 msgid "Current layout of this forum (inherited from parent category)"
 msgstr ""
 
-#: admin/pages/forum.php:323
+#: admin/pages/forum.php:333
 msgid "Category layout and cover image"
 msgstr ""
 
-#: admin/pages/forum.php:343
+#: admin/pages/forum.php:353
 msgid ""
 "Forums can be displayed with different layouts (Extended, Simplified, Q&A, "
 "Threaded). Use the \"Category Layout\" dropdown located on the top right "
@@ -943,77 +939,77 @@ msgid ""
 "disabled if this forum is not a Category."
 msgstr ""
 
-#: admin/pages/forum.php:350
+#: admin/pages/forum.php:360
 msgid "Category Cover Image"
 msgstr ""
 
-#: admin/pages/forum.php:354 admin/pages/forum.php:359
+#: admin/pages/forum.php:364 admin/pages/forum.php:369
 msgid "Upload image"
 msgstr ""
 
-#: admin/pages/forum.php:355 admin/pages/forum.php:360
+#: admin/pages/forum.php:365 admin/pages/forum.php:370
 msgid "Remove image"
 msgstr ""
 
-#: admin/pages/forum.php:374
+#: admin/pages/forum.php:384
 msgid "Insert image"
 msgstr ""
 
-#: admin/pages/forum.php:376
+#: admin/pages/forum.php:386
 msgid "Use this image"
 msgstr ""
 
-#: admin/pages/forum.php:401 includes/phrases.php:304
+#: admin/pages/forum.php:411 includes/phrases.php:304
 msgid "Forum Slug"
 msgstr ""
 
-#: admin/pages/forum.php:404 includes/phrases.php:508
+#: admin/pages/forum.php:414 includes/phrases.php:508
 msgid ""
 "The \"slug\" is the URL-friendly version of the name. It is usually all "
 "lowercase and contains only letters, numbers, and hyphens."
 msgstr ""
 
-#: admin/pages/forum.php:409
+#: admin/pages/forum.php:419
 msgid "Forum Icon"
 msgstr ""
 
-#: admin/pages/forum.php:412
+#: admin/pages/forum.php:422
 msgid "Font-awesome Icon"
 msgstr ""
 
-#: admin/pages/forum.php:414
+#: admin/pages/forum.php:424
 msgid "You can find all icons"
 msgstr ""
 
-#: admin/pages/forum.php:414
+#: admin/pages/forum.php:424
 msgid "here"
 msgstr ""
 
-#: admin/pages/forum.php:414
+#: admin/pages/forum.php:424
 msgid ""
 "Make sure you insert a class of font-awesome icon, it should start with fa- "
 "prefix like &quot;fas fa-comments&quot;."
 msgstr ""
 
-#: admin/pages/forum.php:420 includes/phrases.php:302
+#: admin/pages/forum.php:430 includes/phrases.php:302
 msgid "Forum SEO Description"
 msgstr ""
 
-#: admin/pages/forum.php:423 includes/phrases.php:370
+#: admin/pages/forum.php:433 includes/phrases.php:370
 msgid "Meta Description"
 msgstr ""
 
-#: admin/pages/forum.php:453 includes/phrases.php:514
+#: admin/pages/forum.php:463 includes/phrases.php:514
 msgid "This action will also delete all sub-forums, topics and replies."
 msgstr ""
 
-#: admin/pages/forum.php:461 includes/phrases.php:323
+#: admin/pages/forum.php:471 includes/phrases.php:323
 msgid ""
 "If you want to delete this forum and keep its sub-forums, topics and replies, "
 "please select a new target forum in dropdown below"
 msgstr ""
 
-#: admin/pages/forum.php:470 includes/phrases.php:212
+#: admin/pages/forum.php:480 includes/phrases.php:212
 msgid ""
 "All sub-forums, topics and replies will be attached to selected forum. Layout "
 "will be inherited from this forum."
@@ -1298,7 +1294,7 @@ msgstr ""
 msgid "Usergroup"
 msgstr ""
 
-#: admin/pages/usergroup.php:38 classes/Settings.php:1137 includes/hooks.php:1272
+#: admin/pages/usergroup.php:38 classes/Settings.php:1137 includes/hooks.php:1275
 msgid "Default"
 msgstr ""
 
@@ -1310,7 +1306,7 @@ msgstr ""
 #: admin/settings/styles.php:64 admin/settings/styles.php:72
 #: admin/settings/styles.php:77 admin/settings/styles.php:83
 #: admin/settings/styles.php:93 admin/settings/styles.php:98
-#: admin/settings/styles.php:104 classes/Settings.php:3362
+#: admin/settings/styles.php:104 classes/Settings.php:3348
 #: includes/phrases.php:242
 msgid "Color"
 msgstr ""
@@ -1688,8 +1684,8 @@ msgstr ""
 msgid "Post Content"
 msgstr ""
 
-#: admin/settings/rating.php:12 classes/Settings.php:1308
-#: classes/Settings.php:1368 includes/phrases.php:361
+#: admin/settings/rating.php:12 classes/Settings.php:1310
+#: classes/Settings.php:1372 includes/phrases.php:361
 msgid "Member Reputation and Titles"
 msgstr ""
 
@@ -1720,7 +1716,7 @@ msgstr ""
 msgid "General Share Buttons"
 msgstr ""
 
-#: admin/settings/social.php:113 classes/Settings.php:2584
+#: admin/settings/social.php:113 classes/Settings.php:2588
 msgid "Post Sharing Toggle"
 msgstr ""
 
@@ -1884,24 +1880,24 @@ msgid "General"
 msgstr ""
 
 #: admin/settings/topics.php:68 admin/tools-tabs/cleanup.php:40
-#: classes/Settings.php:2831 includes/phrases.php:552 widgets/Forums.php:99
-#: widgets/OnlineMembers.php:103 widgets/RecentPosts.php:245
-#: widgets/RecentPosts.php:261 widgets/RecentPosts.php:307
-#: widgets/RecentPosts.php:315 widgets/RecentPosts.php:323
-#: widgets/RecentPosts.php:332 widgets/RecentTopics.php:166
-#: widgets/RecentTopics.php:182 widgets/RecentTopics.php:211
-#: widgets/RecentTopics.php:220 widgets/Tags.php:90
+#: classes/Settings.php:2834 includes/phrases.php:552 widgets/Forums.php:110
+#: widgets/OnlineMembers.php:104 widgets/RecentPosts.php:257
+#: widgets/RecentPosts.php:273 widgets/RecentPosts.php:319
+#: widgets/RecentPosts.php:327 widgets/RecentPosts.php:335
+#: widgets/RecentPosts.php:344 widgets/RecentTopics.php:177
+#: widgets/RecentTopics.php:193 widgets/RecentTopics.php:222
+#: widgets/RecentTopics.php:231 widgets/Tags.php:101
 msgid "Yes"
 msgstr ""
 
 #: admin/settings/topics.php:69 admin/tools-tabs/cleanup.php:41
-#: classes/Settings.php:2832 includes/phrases.php:382 widgets/Forums.php:102
-#: widgets/OnlineMembers.php:106 widgets/RecentPosts.php:248
-#: widgets/RecentPosts.php:264 widgets/RecentPosts.php:310
-#: widgets/RecentPosts.php:318 widgets/RecentPosts.php:326
-#: widgets/RecentPosts.php:335 widgets/RecentTopics.php:169
-#: widgets/RecentTopics.php:185 widgets/RecentTopics.php:214
-#: widgets/RecentTopics.php:223 widgets/Tags.php:93
+#: classes/Settings.php:2835 includes/phrases.php:382 widgets/Forums.php:113
+#: widgets/OnlineMembers.php:107 widgets/RecentPosts.php:260
+#: widgets/RecentPosts.php:276 widgets/RecentPosts.php:322
+#: widgets/RecentPosts.php:330 widgets/RecentPosts.php:338
+#: widgets/RecentPosts.php:347 widgets/RecentTopics.php:180
+#: widgets/RecentTopics.php:196 widgets/RecentTopics.php:225
+#: widgets/RecentTopics.php:234 widgets/Tags.php:104
 msgid "No"
 msgstr ""
 
@@ -2267,171 +2263,171 @@ msgstr ""
 msgid "Theme delete success"
 msgstr ""
 
-#: classes/Cache.php:447
+#: classes/Cache.php:457
 msgid "Please navigate in Dashboard to Settings > WP Super Cache"
 msgstr ""
 
-#: classes/Cache.php:448
+#: classes/Cache.php:458
 msgid "Go to Advanced Tab, scroll down to \"Rejected URL Strings\" option"
 msgstr ""
 
-#: classes/Cache.php:449 classes/Cache.php:457
+#: classes/Cache.php:459 classes/Cache.php:467
 msgid ""
 "Insert the URL path(s) of your forum page(s) one per line in the option "
 "textarea:"
 msgstr ""
 
-#: classes/Cache.php:450 classes/Cache.php:458 classes/Cache.php:466
-#: classes/Cache.php:483 classes/Cache.php:491 classes/Cache.php:499
+#: classes/Cache.php:460 classes/Cache.php:468 classes/Cache.php:476
+#: classes/Cache.php:493 classes/Cache.php:501 classes/Cache.php:509
 msgid "Save it and delete all caches."
 msgstr ""
 
-#: classes/Cache.php:455
+#: classes/Cache.php:465
 msgid "Please navigate in Dashboard to LiteSpeed Cache > Cache admin page"
 msgstr ""
 
-#: classes/Cache.php:456
+#: classes/Cache.php:466
 msgid "Go to Exclude Tab, find the \"Do Not Cache URIs\" option"
 msgstr ""
 
-#: classes/Cache.php:463
+#: classes/Cache.php:473
 msgid "Please navigate in Dashboard to WP Rocket > Advanced Rules Tab"
 msgstr ""
 
-#: classes/Cache.php:464
+#: classes/Cache.php:474
 msgid "Scroll down to \"Never cache (URLs)\" option"
 msgstr ""
 
-#: classes/Cache.php:465
+#: classes/Cache.php:475
 msgid ""
 "Insert the URL path(s) of your forum page(s) one per line with wildcard (.*) "
 "in the option textarea:"
 msgstr ""
 
-#: classes/Cache.php:471
+#: classes/Cache.php:481
 msgid "Please navigate in Dashboard to WP Fastest Cache > Exclude Tab"
 msgstr ""
 
-#: classes/Cache.php:472
+#: classes/Cache.php:482
 msgid "In the \"Exclude Pages\" section click the [Add New Rule] button"
 msgstr ""
 
-#: classes/Cache.php:473
+#: classes/Cache.php:483
 msgid ""
 "Select [Start with] option in the drop-down menu and insert the URL path(s) of "
 "your forum page(s) one per rule in the next field:"
 msgstr ""
 
-#: classes/Cache.php:474
+#: classes/Cache.php:484
 msgid ""
 "If you have more than one forum pages (boards) you should create separate "
 "rules for each forum board."
 msgstr ""
 
-#: classes/Cache.php:475
+#: classes/Cache.php:485
 msgid "Save rules and delete all caches."
 msgstr ""
 
-#: classes/Cache.php:480
+#: classes/Cache.php:490
 msgid "Please navigate in Dashboard to Performance > Page Cache admin page"
 msgstr ""
 
-#: classes/Cache.php:481
+#: classes/Cache.php:491
 msgid "Go to Advanced Tab, scroll down to Rejected URL Strings option"
 msgstr ""
 
-#: classes/Cache.php:482
+#: classes/Cache.php:492
 msgid ""
 "Scroll to Advanced section and insert the URL path(s) of your forum page(s) "
 "one per line in the \"Never cache the following pages\" textarea:"
 msgstr ""
 
-#: classes/Cache.php:488
+#: classes/Cache.php:498
 msgid "Please navigate in Dashboard to WP-Optimize > Cache admin page"
 msgstr ""
 
-#: classes/Cache.php:489
+#: classes/Cache.php:499
 msgid ""
 "Go to Advanced Settings Tab, find the \"URLs to exclude from caching\" option"
 msgstr ""
 
-#: classes/Cache.php:490
+#: classes/Cache.php:500
 msgid ""
 "Insert the URL path(s) of your forum page(s) one per line with wildcard [*] in "
 "the option textarea:"
 msgstr ""
 
-#: classes/Cache.php:496
+#: classes/Cache.php:506
 msgid "Please navigate in Dashboard to SG Optimizer > Caching admin page"
 msgstr ""
 
-#: classes/Cache.php:497
+#: classes/Cache.php:507
 msgid ""
 "Scroll to Exclude URLs from Caching section and click the \"pencil\" button, "
 "enable it, and click the button again"
 msgstr ""
 
-#: classes/Cache.php:498
+#: classes/Cache.php:508
 msgid ""
 "Insert the URL path(s) of your forum page(s) with wildcard [*] in the pop-up "
 "filed:"
 msgstr ""
 
-#: classes/Forums.php:837
+#: classes/Forums.php:838
 msgid "Add a new Subforum"
 msgstr ""
 
-#: classes/Forums.php:837
+#: classes/Forums.php:838
 msgid "Add a new Forum in this Category"
 msgstr ""
 
-#: classes/Members.php:409
+#: classes/Members.php:411
 msgid "<strong>ERROR</strong>: Please enter a username."
 msgstr ""
 
-#: classes/Members.php:414
+#: classes/Members.php:416
 msgid ""
 "<strong>ERROR</strong>: This username is invalid because it uses illegal "
 "characters. Please enter a valid username."
 msgstr ""
 
-#: classes/Members.php:423
+#: classes/Members.php:425
 msgid ""
 "<strong>ERROR</strong>: This username is already registered. Please choose "
 "another one."
 msgstr ""
 
-#: classes/Members.php:428
+#: classes/Members.php:430
 msgid "<strong>ERROR</strong>: Sorry, that username is not allowed."
 msgstr ""
 
-#: classes/Members.php:433
+#: classes/Members.php:435
 msgid "<strong>ERROR</strong>: Please type your email address."
 msgstr ""
 
-#: classes/Members.php:438
+#: classes/Members.php:440
 msgid "<strong>ERROR</strong>: The email address isn&#8217;t correct."
 msgstr ""
 
-#: classes/Members.php:443
+#: classes/Members.php:445
 msgid ""
 "<strong>ERROR</strong>: This email is already registered, please choose "
 "another one."
 msgstr ""
 
-#: classes/Members.php:1845
+#: classes/Members.php:1855
 msgid "What should be done with wpForo content owned by this user?"
 msgstr ""
 
-#: classes/Members.php:1848
+#: classes/Members.php:1858
 msgid "What should be done with wpForo content owned by these users?"
 msgstr ""
 
-#: classes/Members.php:1852
+#: classes/Members.php:1862
 msgid "Delete all wpForo content."
 msgstr ""
 
-#: classes/Members.php:1854
+#: classes/Members.php:1864
 msgid "Attribute all content to:"
 msgstr ""
 
@@ -2627,35 +2623,35 @@ msgid ""
 "before enabling this option."
 msgstr ""
 
-#: classes/Settings.php:138
+#: classes/Settings.php:139
 msgid "Enable WordPress Date/Time Format"
 msgstr ""
 
-#: classes/Settings.php:140 includes/phrases.php:789
+#: classes/Settings.php:141 includes/phrases.php:789
 msgid ""
 "You can manage WordPress date and time format in WordPress Settings > General "
 "admin page."
 msgstr ""
 
-#: classes/Settings.php:146 includes/phrases.php:268
+#: classes/Settings.php:147 includes/phrases.php:268
 msgid "Enable wpForo Font-Awesome Lib"
 msgstr ""
 
-#: classes/Settings.php:159 includes/phrases.php:793
+#: classes/Settings.php:160 includes/phrases.php:793
 msgid "Enable Debug Mode"
 msgstr ""
 
-#: classes/Settings.php:161 includes/phrases.php:794
+#: classes/Settings.php:162 includes/phrases.php:794
 msgid ""
 "If you got some issue with wpForo, please enable this option before asking for "
 "support, this outputs hidden important information to help us debug your issue."
 msgstr ""
 
-#: classes/Settings.php:168
+#: classes/Settings.php:169
 msgid "Board Settings"
 msgstr ""
 
-#: classes/Settings.php:171
+#: classes/Settings.php:172
 msgid ""
 "This is a board specific general setting page. Boards are separate forums in "
 "separate pages. By default, there is a one forum board and one setting menu. "
@@ -2666,41 +2662,41 @@ msgid ""
 "cache and manage some board specific permalinks."
 msgstr ""
 
-#: classes/Settings.php:182
+#: classes/Settings.php:183
 msgid "Under Construction"
 msgstr ""
 
-#: classes/Settings.php:184
+#: classes/Settings.php:185
 msgid ""
 "You can enable option Under Construction for each boards separately. (This "
 "option has no effect for site admins.)"
 msgstr ""
 
-#: classes/Settings.php:190
+#: classes/Settings.php:191
 msgid "Enable Cache"
 msgstr ""
 
-#: classes/Settings.php:192
+#: classes/Settings.php:193
 msgid ""
 "wpForo has own cache system, enable this to reduce sql requests and make your "
 "forum run faster."
 msgstr ""
 
-#: classes/Settings.php:198
+#: classes/Settings.php:199
 msgid "URL Structure"
 msgstr ""
 
-#: classes/Settings.php:200
+#: classes/Settings.php:201
 msgid ""
 "This option allows managing topic and post URL structure. By default, URLs are "
 "built based on topic titles. You can change them to ID and make them shorter."
 msgstr ""
 
-#: classes/Settings.php:211
+#: classes/Settings.php:212
 msgid "Display Components"
 msgstr ""
 
-#: classes/Settings.php:214
+#: classes/Settings.php:215
 msgid ""
 "wpForo is a forum plugin which is loaded in one WordPress page, so the whole "
 "forum with its categories, forums, topics, members and profile pages are "
@@ -2709,59 +2705,59 @@ msgid ""
 "settings, especially here, in the Display Components admin page."
 msgstr ""
 
-#: classes/Settings.php:225
+#: classes/Settings.php:226
 msgid "Frontend Admin Control Panel"
 msgstr ""
 
-#: classes/Settings.php:227
+#: classes/Settings.php:228
 msgid ""
 "This is a section with some important buttons for quick actions and accesses "
 "to certain admin pages. it's located in the forum home page under the forum "
 "list. This section is only available for website administrators."
 msgstr ""
 
-#: classes/Settings.php:233 includes/phrases.php:482
+#: classes/Settings.php:234 includes/phrases.php:482
 msgid "Show Forum Page Title"
 msgstr ""
 
-#: classes/Settings.php:241
+#: classes/Settings.php:242
 msgid "Show Forum Menu Bar"
 msgstr ""
 
-#: classes/Settings.php:243
+#: classes/Settings.php:244
 msgid ""
 "This menu bar contains the forum menu, notification bell and forum search "
 "section."
 msgstr ""
 
-#: classes/Settings.php:249
+#: classes/Settings.php:250
 msgid "Show Search Section in the Forum Menu Bar"
 msgstr ""
 
-#: classes/Settings.php:257 includes/phrases.php:481
+#: classes/Settings.php:258 includes/phrases.php:481
 msgid "Show Breadcrumb"
 msgstr ""
 
-#: classes/Settings.php:265
+#: classes/Settings.php:266
 msgid "Show Forum Footer"
 msgstr ""
 
-#: classes/Settings.php:267
+#: classes/Settings.php:268
 msgid ""
 "Forum footer is located at the bottom of all forum content. It includes forum "
 "statistic, last registered user and post information. As well as it contains "
 "the 'Mark all read' button and forums/topics icon description."
 msgstr ""
 
-#: classes/Settings.php:273 includes/phrases.php:483
+#: classes/Settings.php:274 includes/phrases.php:483
 msgid "Show Forum Statistic"
 msgstr ""
 
-#: classes/Settings.php:281 includes/phrases.php:320
+#: classes/Settings.php:282 includes/phrases.php:320
 msgid "Help wpForo to grow, show plugin info"
 msgstr ""
 
-#: classes/Settings.php:283 includes/phrases.php:412
+#: classes/Settings.php:284 includes/phrases.php:412
 msgid ""
 "Please enable this option to help wpForo get more popularity as your thank to "
 "the hard work we do for you totally free. This option adds a very small icon "
@@ -2769,11 +2765,11 @@ msgid ""
 "forum solution you use."
 msgstr ""
 
-#: classes/Settings.php:290
+#: classes/Settings.php:291
 msgid "Display Forums"
 msgstr ""
 
-#: classes/Settings.php:294
+#: classes/Settings.php:295
 msgid ""
 "Here you can manage forum specific components which are displayed on the "
 "frontend. All options are grouped by forum layouts. You can find all necessary "
@@ -2781,83 +2777,83 @@ msgid ""
 "own specific features."
 msgstr ""
 
-#: classes/Settings.php:305
+#: classes/Settings.php:306
 msgid "Extended Layout - Recent topics"
 msgstr ""
 
-#: classes/Settings.php:310 classes/Settings.php:348 classes/Settings.php:386
-#: classes/Settings.php:574 classes/Settings.php:2597 includes/phrases.php:241
+#: classes/Settings.php:311 classes/Settings.php:349 classes/Settings.php:387
+#: classes/Settings.php:575 classes/Settings.php:2601 includes/phrases.php:241
 msgid "Collapsed"
 msgstr ""
 
-#: classes/Settings.php:311 classes/Settings.php:349 classes/Settings.php:387
-#: classes/Settings.php:575 classes/Settings.php:2598 includes/phrases.php:275
+#: classes/Settings.php:312 classes/Settings.php:350 classes/Settings.php:388
+#: classes/Settings.php:576 classes/Settings.php:2602 includes/phrases.php:275
 msgid "Expanded"
 msgstr ""
 
-#: classes/Settings.php:318
+#: classes/Settings.php:319
 msgid "Extended Layout - Number of Recent topics"
 msgstr ""
 
-#: classes/Settings.php:327
+#: classes/Settings.php:328
 msgid "Extended Layout - Recent topic length"
 msgstr ""
 
-#: classes/Settings.php:329 classes/Settings.php:367
+#: classes/Settings.php:330 classes/Settings.php:368
 msgid ""
 "Set this option value 0 if you want to show the whole title in recent topic "
 "area."
 msgstr ""
 
-#: classes/Settings.php:335
+#: classes/Settings.php:336
 msgid "Simplified Layout - Display Add Topic Button on Forum List"
 msgstr ""
 
-#: classes/Settings.php:343
+#: classes/Settings.php:344
 msgid "Q&A Layout - Recent topics"
 msgstr ""
 
-#: classes/Settings.php:356
+#: classes/Settings.php:357
 msgid "Q&A Layout - Number of Recent topics"
 msgstr ""
 
-#: classes/Settings.php:365
+#: classes/Settings.php:366
 msgid "Q&A Layout - Recent topic length"
 msgstr ""
 
-#: classes/Settings.php:373
+#: classes/Settings.php:374
 msgid "Q&A Layout - Display Add Topic Button on Forum List"
 msgstr ""
 
-#: classes/Settings.php:381
+#: classes/Settings.php:382
 msgid "Threaded Layout - Forums List"
 msgstr ""
 
-#: classes/Settings.php:393
+#: classes/Settings.php:394
 msgid "Threaded Layout - Display Sub Forums with Parent Forums"
 msgstr ""
 
-#: classes/Settings.php:401
+#: classes/Settings.php:402
 msgid "Threaded Layout - Display Thread Filtering Buttons"
 msgstr ""
 
-#: classes/Settings.php:409
+#: classes/Settings.php:410
 msgid "Threaded Layout - Display Add Topic Button on Forum List"
 msgstr ""
 
-#: classes/Settings.php:418
+#: classes/Settings.php:419
 msgid "Threaded Layout - Number of Recent topics"
 msgstr ""
 
-#: classes/Settings.php:427
+#: classes/Settings.php:428
 msgid "Threaded Layout - Recent topic length"
 msgstr ""
 
-#: classes/Settings.php:437
+#: classes/Settings.php:438
 msgid "Colors &amp; Styles"
 msgstr ""
 
-#: classes/Settings.php:440
+#: classes/Settings.php:441
 msgid ""
 "Here you can change your forum style. There are six predefined styles "
 "(default, red, green, orange, gray and dark), these are set of different "
@@ -2866,41 +2862,41 @@ msgid ""
 "Also, you can change font size of forums, topics and post content."
 msgstr ""
 
-#: classes/Settings.php:451
+#: classes/Settings.php:452
 msgid "Font Sizes"
 msgstr ""
 
-#: classes/Settings.php:453
+#: classes/Settings.php:454
 msgid ""
 "These options allow you to change the font sizes of forum and topic titles as "
 "well as the font size of post content."
 msgstr ""
 
-#: classes/Settings.php:460
+#: classes/Settings.php:461
 msgid "Forums font size:"
 msgstr ""
 
-#: classes/Settings.php:486
+#: classes/Settings.php:487
 msgid "Topics font size:"
 msgstr ""
 
-#: classes/Settings.php:512
+#: classes/Settings.php:513
 msgid "Post content font size:"
 msgstr ""
 
-#: classes/Settings.php:538 includes/phrases.php:247
+#: classes/Settings.php:539 includes/phrases.php:247
 msgid "Custom CSS Code"
 msgstr ""
 
-#: classes/Settings.php:546
+#: classes/Settings.php:547
 msgid "Forum Color Styles"
 msgstr ""
 
-#: classes/Settings.php:555
+#: classes/Settings.php:556
 msgid "Display Topics &amp; Posts"
 msgstr ""
 
-#: classes/Settings.php:558
+#: classes/Settings.php:559
 msgid ""
 "This is the right place to manage topics and posts displaying options. Here "
 "you can manage the number of topics and posts per page, also you can display "
@@ -2908,93 +2904,93 @@ msgid ""
 "are grouped by forum layouts."
 msgstr ""
 
-#: classes/Settings.php:569
+#: classes/Settings.php:570
 msgid "Extended Layout - Recent posts"
 msgstr ""
 
-#: classes/Settings.php:582
+#: classes/Settings.php:583
 msgid "Extended Layout - Number of Recent posts"
 msgstr ""
 
-#: classes/Settings.php:584
+#: classes/Settings.php:585
 msgid ""
 "Set this option value 0 if you want to show all posts in recent posts area."
 msgstr ""
 
-#: classes/Settings.php:591
+#: classes/Settings.php:592
 msgid "Extended Layout - Recent post length"
 msgstr ""
 
-#: classes/Settings.php:600
+#: classes/Settings.php:601
 msgid "Q&A Layout - Number of Answers per Page"
 msgstr ""
 
-#: classes/Settings.php:609
+#: classes/Settings.php:610
 msgid "Q&A Layout - Number of Comments per Answer"
 msgstr ""
 
-#: classes/Settings.php:611
+#: classes/Settings.php:612
 msgid ""
 "This is the number of comments under the answers before clicking the [load "
 "more comments] button. Set this option value 0 if you want to show all "
 "comments."
 msgstr ""
 
-#: classes/Settings.php:617
+#: classes/Settings.php:618
 msgid "Q&A Layout - Enable Comments on the First Post (question)"
 msgstr ""
 
-#: classes/Settings.php:626
+#: classes/Settings.php:627
 msgid "Threaded Layout - Number of Parent Posts per Page"
 msgstr ""
 
-#: classes/Settings.php:636
+#: classes/Settings.php:637
 msgid "Threaded Layout - Replies Nesting Levels Deep"
 msgstr ""
 
-#: classes/Settings.php:644
+#: classes/Settings.php:645
 msgid "Threaded Layout - First Post Reply Button"
 msgstr ""
 
-#: classes/Settings.php:653 includes/phrases.php:399
+#: classes/Settings.php:654 includes/phrases.php:399
 msgid "Number of Topics per Page"
 msgstr ""
 
-#: classes/Settings.php:662 includes/phrases.php:398
+#: classes/Settings.php:663 includes/phrases.php:398
 msgid "Number of Posts per Page"
 msgstr ""
 
-#: classes/Settings.php:671
+#: classes/Settings.php:672
 msgid "Maximum Number of Search Results"
 msgstr ""
 
-#: classes/Settings.php:679
+#: classes/Settings.php:680
 msgid "Stick Topic's First Post on Top for Certain Forum Layout"
 msgstr ""
 
-#: classes/Settings.php:681
+#: classes/Settings.php:682
 msgid ""
 "This option keeps the first topic post on top when you navigate through pages "
 "of that topic. You can manage this option by forum layouts."
 msgstr ""
 
-#: classes/Settings.php:687
+#: classes/Settings.php:688
 msgid "Recent Posts Display Type"
 msgstr ""
 
-#: classes/Settings.php:699
+#: classes/Settings.php:700
 msgid "Display Topic Statistics and Overview Panel"
 msgstr ""
 
-#: classes/Settings.php:707
+#: classes/Settings.php:708
 msgid "Keep Expanded Topic Overview in the Statistic Panel"
 msgstr ""
 
-#: classes/Settings.php:716 includes/phrases.php:987 widgets/Tags.php:22
+#: classes/Settings.php:717 includes/phrases.php:987 widgets/Tags.php:22
 msgid "Topic Tags"
 msgstr ""
 
-#: classes/Settings.php:719
+#: classes/Settings.php:720
 msgid ""
 "Tags are a free form method of categorization, currently being used to group "
 "and categorize similar topics. The goal of using these tags in the forum is to "
@@ -3002,37 +2998,37 @@ msgid ""
 "the size of the tag, the more discussions about the topic."
 msgstr ""
 
-#: classes/Settings.php:731
+#: classes/Settings.php:732
 msgid "Maximum Number of Tags per Topic"
 msgstr ""
 
-#: classes/Settings.php:740
+#: classes/Settings.php:741
 msgid "Number of Tags per Page"
 msgstr ""
 
-#: classes/Settings.php:750
+#: classes/Settings.php:751
 msgid "Maximum Tag Length"
 msgstr ""
 
-#: classes/Settings.php:759
+#: classes/Settings.php:760
 msgid "Maximum Number of Suggested Tags"
 msgstr ""
 
-#: classes/Settings.php:761
+#: classes/Settings.php:762
 msgid ""
 "Tags are suggested while you type in the tag field. Using this option you can "
 "limit the maximum number of suggested tags."
 msgstr ""
 
-#: classes/Settings.php:767
+#: classes/Settings.php:768
 msgid "Force Lowercase Tags"
 msgstr ""
 
-#: classes/Settings.php:776
+#: classes/Settings.php:777
 msgid "Posting &amp; Editor Settings"
 msgstr ""
 
-#: classes/Settings.php:779
+#: classes/Settings.php:780
 msgid ""
 "Here, you can find all settings related to topic and post creation including "
 "rich editor settings, text limitations, attachments control, option to enable "
@@ -3041,153 +3037,158 @@ msgid ""
 "general for all forum layouts."
 msgstr ""
 
-#: classes/Settings.php:790
+#: classes/Settings.php:791
 msgid "Q&A Layout - Display Answer Editor"
 msgstr ""
 
-#: classes/Settings.php:798
+#: classes/Settings.php:799
 msgid "Q&A Layout - Comment Form Type"
 msgstr ""
 
-#: classes/Settings.php:803 classes/Settings.php:815
+#: classes/Settings.php:804 classes/Settings.php:816
 msgid "Text Editor"
 msgstr ""
 
-#: classes/Settings.php:804 classes/Settings.php:816
+#: classes/Settings.php:805 classes/Settings.php:817
 msgid "Visual Editor"
 msgstr ""
 
-#: classes/Settings.php:810
+#: classes/Settings.php:811
 msgid "Threaded Layout - Reply Form Type"
 msgstr ""
 
-#: classes/Settings.php:823
+#: classes/Settings.php:824
 msgid "Topic Title Minimum Length"
 msgstr ""
 
-#: classes/Settings.php:833
+#: classes/Settings.php:834
 msgid "Topic Title Maximum Length"
 msgstr ""
 
-#: classes/Settings.php:835
+#: classes/Settings.php:836
 msgid "Topic title length cannot be set more than 250 character."
 msgstr ""
 
-#: classes/Settings.php:842
+#: classes/Settings.php:843
 msgid "Topic Content Minimum Length"
 msgstr ""
 
-#: classes/Settings.php:851
-msgid "Topic Content Maximum Length"
-msgstr ""
-
-#: classes/Settings.php:853 classes/Settings.php:871 classes/Settings.php:889
+#: classes/Settings.php:845 classes/Settings.php:854 classes/Settings.php:872
+#: classes/Settings.php:890
 msgid "Set this option value 0 to remove this limit."
 msgstr ""
 
-#: classes/Settings.php:860
+#: classes/Settings.php:852
+msgid "Topic Content Maximum Length"
+msgstr ""
+
+#: classes/Settings.php:861
 msgid "Reply Content Minimum Length"
 msgstr ""
 
-#: classes/Settings.php:869
+#: classes/Settings.php:863
+msgid "You cannot set this value 0."
+msgstr ""
+
+#: classes/Settings.php:870
 msgid "Reply Content Maximum Length"
 msgstr ""
 
-#: classes/Settings.php:878
+#: classes/Settings.php:879
 msgid "Comment Content Minimum Length"
 msgstr ""
 
-#: classes/Settings.php:887
+#: classes/Settings.php:888
 msgid "Comment Content Maximum Length"
 msgstr ""
 
-#: classes/Settings.php:896
+#: classes/Settings.php:897
 msgid "Allow Edit Own Topic within (minutes)"
 msgstr ""
 
-#: classes/Settings.php:898 classes/Settings.php:916 classes/Settings.php:925
+#: classes/Settings.php:899 classes/Settings.php:917 classes/Settings.php:926
 msgid "Set this option value 0 to remove time limit."
 msgstr ""
 
-#: classes/Settings.php:905
+#: classes/Settings.php:906
 msgid "Allow Delete Own Topic within (minutes)"
 msgstr ""
 
-#: classes/Settings.php:914
+#: classes/Settings.php:915
 msgid "Allow Edit Own Post within (minutes)"
 msgstr ""
 
-#: classes/Settings.php:923
+#: classes/Settings.php:924
 msgid "Allow Delete Own Post within (minutes)"
 msgstr ""
 
-#: classes/Settings.php:931
+#: classes/Settings.php:932
 msgid "Display Topic Editing Information"
 msgstr ""
 
-#: classes/Settings.php:933
+#: classes/Settings.php:934
 msgid ""
 "The topic edit logging information 'This post was modified 2 hours ago by "
 "John' is displayed under modified topic first post content..."
 msgstr ""
 
-#: classes/Settings.php:939
+#: classes/Settings.php:940
 msgid "Display Post Editing Information"
 msgstr ""
 
-#: classes/Settings.php:941
+#: classes/Settings.php:942
 msgid ""
 "The post edit logging information 'This post was modified 2 hours ago by John' "
 "is displayed under modified post content..."
 msgstr ""
 
-#: classes/Settings.php:948
+#: classes/Settings.php:949
 msgid "Limit Post Editing Information"
 msgstr ""
 
-#: classes/Settings.php:950
+#: classes/Settings.php:951
 msgid ""
 "Limit the post edit logging information 'This post was modified 2 hours ago by "
 "John'. Set this option value 0 if you want to disable limiting."
 msgstr ""
 
-#: classes/Settings.php:956
+#: classes/Settings.php:957
 msgid "Post Preview"
 msgstr ""
 
-#: classes/Settings.php:964
+#: classes/Settings.php:965
 msgid "Post Revisions and Draft Saving"
 msgstr ""
 
-#: classes/Settings.php:972
+#: classes/Settings.php:973
 msgid "Auto Drafting Interval"
 msgstr ""
 
-#: classes/Settings.php:977
+#: classes/Settings.php:978
 msgid "disabled"
 msgstr ""
 
-#: classes/Settings.php:978
+#: classes/Settings.php:979
 msgid "15 seconds"
 msgstr ""
 
-#: classes/Settings.php:979
+#: classes/Settings.php:980
 msgid "30 seconds"
 msgstr ""
 
-#: classes/Settings.php:980
+#: classes/Settings.php:981
 msgid "1 minute"
 msgstr ""
 
-#: classes/Settings.php:981
+#: classes/Settings.php:982
 msgid "2 minute"
 msgstr ""
 
-#: classes/Settings.php:982
+#: classes/Settings.php:983
 msgid "5 minute"
 msgstr ""
 
-#: classes/Settings.php:989
+#: classes/Settings.php:990
 msgid "Max Number of Revisions"
 msgstr ""
 
@@ -3401,21 +3402,21 @@ msgid ""
 "usergroup's users avatar in forum posts."
 msgstr ""
 
-#: classes/Settings.php:1222
+#: classes/Settings.php:1223
 msgid "Display Member Secondary Usergroup"
 msgstr ""
 
-#: classes/Settings.php:1224
+#: classes/Settings.php:1225
 msgid ""
 "The names of selected secondary usergroups will be displayed under the "
 "corresponding usergroup's users avatar in forum posts."
 msgstr ""
 
-#: classes/Settings.php:1230
+#: classes/Settings.php:1232
 msgid "Display Member Nicknames"
 msgstr ""
 
-#: classes/Settings.php:1232
+#: classes/Settings.php:1234
 msgid ""
 "Nicknames are displayed with '@' symbol, like @john and are used for the user "
 "mentioning in posts. Please note, that this is not the user login name "
@@ -3423,11 +3424,11 @@ msgid ""
 "profile account page to secure the login name."
 msgstr ""
 
-#: classes/Settings.php:1238 includes/phrases.php:263
+#: classes/Settings.php:1240 includes/phrases.php:263
 msgid "Enable Avatars"
 msgstr ""
 
-#: classes/Settings.php:1240
+#: classes/Settings.php:1242
 msgid ""
 "Using this option you can disable user avatars for the forum but you cannot "
 "show avatars if the WordPress native avatar option is disabled. So please make "
@@ -3435,46 +3436,46 @@ msgid ""
 "admin page."
 msgstr ""
 
-#: classes/Settings.php:1246 includes/phrases.php:264
+#: classes/Settings.php:1248 includes/phrases.php:264
 msgid "Enable Custom Avatars"
 msgstr ""
 
-#: classes/Settings.php:1248
+#: classes/Settings.php:1250
 msgid ""
 "By default wpForo uses WordPress avatars. In most cases it's the Gravatar. If "
 "this option is enabled, users will be able to set their avatars with external "
 "URLs or upload from their devices."
 msgstr ""
 
-#: classes/Settings.php:1254
+#: classes/Settings.php:1256
 msgid "Site-wide Usage of Forum Profile Avatar"
 msgstr ""
 
-#: classes/Settings.php:1256
+#: classes/Settings.php:1258
 msgid ""
 "If this option is enabled, wpForo will try to use its avatar in all available "
 "places."
 msgstr ""
 
-#: classes/Settings.php:1262
+#: classes/Settings.php:1264
 msgid "The Default Profile Cover Image"
 msgstr ""
 
-#: classes/Settings.php:1270 includes/phrases.php:217
+#: classes/Settings.php:1272 includes/phrases.php:217
 msgid "Allow Member Signature"
 msgstr ""
 
-#: classes/Settings.php:1272
+#: classes/Settings.php:1274
 msgid ""
 "You can edit usergroups and enable/disable the signature for each usergroups "
 "individually."
 msgstr ""
 
-#: classes/Settings.php:1279 includes/phrases.php:358
+#: classes/Settings.php:1281 includes/phrases.php:358
 msgid "Member Rating"
 msgstr ""
 
-#: classes/Settings.php:1282
+#: classes/Settings.php:1284
 msgid ""
 "wpForo has built-in member reputation system based on points user get when he/"
 "she creates new topic, posts, when gets likes or dislikes. This system grants "
@@ -3482,55 +3483,55 @@ msgid ""
 "posts, titles, badges) can be customized and changed in this admin section."
 msgstr ""
 
-#: classes/Settings.php:1282
+#: classes/Settings.php:1284
 msgid ""
 " For an advanced user ranking and members' point awarding system we recommend "
 "using myCRED plugin with the integration addon: "
 msgstr ""
 
-#: classes/Settings.php:1293
+#: classes/Settings.php:1295
 msgid "Enable Member Rating Badges"
 msgstr ""
 
-#: classes/Settings.php:1301 includes/phrases.php:267
+#: classes/Settings.php:1303 includes/phrases.php:267
 msgid "Enable Member Rating Titles"
 msgstr ""
 
-#: classes/Settings.php:1317
+#: classes/Settings.php:1319
 msgid "Points for One Topic"
 msgstr ""
 
-#: classes/Settings.php:1326
+#: classes/Settings.php:1328
 msgid "Points for One Post"
 msgstr ""
 
-#: classes/Settings.php:1335
+#: classes/Settings.php:1337
 msgid "Points for One Like"
 msgstr ""
 
-#: classes/Settings.php:1344
+#: classes/Settings.php:1346
 msgid "Points for One Dislike"
 msgstr ""
 
-#: classes/Settings.php:1346
+#: classes/Settings.php:1348
 msgid ""
 "This should be set a negative value like '-1' to decrease the user reputation "
 "points if he/she receives dislikes."
 msgstr ""
 
-#: classes/Settings.php:1352
+#: classes/Settings.php:1354
 msgid "Enable Reputation Titles for Selected Usergroups"
 msgstr ""
 
-#: classes/Settings.php:1360
+#: classes/Settings.php:1363
 msgid "Enable Reputation Badges for Selected Usergroups"
 msgstr ""
 
-#: classes/Settings.php:1377
+#: classes/Settings.php:1381
 msgid "Login &amp; Registration"
 msgstr ""
 
-#: classes/Settings.php:1380
+#: classes/Settings.php:1384
 msgid ""
 "wpForo is one of the very rare plugins which has its own user registration and "
 "login pages. Both features are based on WordPress functions. Here you can "
@@ -3539,59 +3540,59 @@ msgid ""
 "actions."
 msgstr ""
 
-#: classes/Settings.php:1380
+#: classes/Settings.php:1384
 msgid ""
 "If you need to customize the registration form and add custom fields, you "
 "should check out user custom field builder addon:"
 msgstr ""
 
-#: classes/Settings.php:1391 includes/phrases.php:824
+#: classes/Settings.php:1395 includes/phrases.php:824
 msgid "Enable User Registration"
 msgstr ""
 
-#: classes/Settings.php:1393
+#: classes/Settings.php:1397
 msgid ""
 "This option is not synced with WordPress 'Anyone can register' option in "
 "Dashboard > Settings > General admin page. If this option is enabled new users "
 "will always be able to register."
 msgstr ""
 
-#: classes/Settings.php:1399
+#: classes/Settings.php:1403
 msgid "Enable User Registration email confirmation"
 msgstr ""
 
-#: classes/Settings.php:1401
+#: classes/Settings.php:1405
 msgid ""
 "If you have enabled this option, after registering, user can not login without "
 "confirming the email."
 msgstr ""
 
-#: classes/Settings.php:1407
+#: classes/Settings.php:1411
 msgid "Enable User Manually Approval System"
 msgstr ""
 
-#: classes/Settings.php:1409
+#: classes/Settings.php:1413
 msgid ""
 "If you have enabled this option, after registering, user can not login without "
 "manually approving of administrator."
 msgstr ""
 
-#: classes/Settings.php:1415
+#: classes/Settings.php:1419
 msgid "Admin Contacting Form under the \"Awaiting approval\" Message"
 msgstr ""
 
-#: classes/Settings.php:1417
+#: classes/Settings.php:1421
 msgid ""
 "This option displays a contact form under the 'Awaiting approval' text to "
 "allow inactive users send a message to website administrator. This message "
 "will be sent to the administrator email address."
 msgstr ""
 
-#: classes/Settings.php:1423
+#: classes/Settings.php:1427
 msgid "Role-Usergroup Synchronization"
 msgstr ""
 
-#: classes/Settings.php:1425
+#: classes/Settings.php:1429
 msgid ""
 "Keep enabled this option to synch WordPress User Roles with Forum Usergroups. "
 "This connection allows to automatically change Usergroup of a user when his/"
@@ -3602,11 +3603,11 @@ msgid ""
 "they are only controlled by forum Usergroups."
 msgstr ""
 
-#: classes/Settings.php:1431
+#: classes/Settings.php:1435
 msgid "User Delete Method"
 msgstr ""
 
-#: classes/Settings.php:1433
+#: classes/Settings.php:1437
 msgid ""
 "Choose which method to use when user delete action comes. [Soft] option will "
 "not remove any content this user has already created. It'll only remove the "
@@ -3615,41 +3616,41 @@ msgid ""
 "user has already created."
 msgstr ""
 
-#: classes/Settings.php:1436
+#: classes/Settings.php:1440
 msgid "Soft"
 msgstr ""
 
-#: classes/Settings.php:1436
+#: classes/Settings.php:1440
 msgid ""
 "This method will delete only profile information so all content which created "
 "this user will be kept and renamed as Anonymous."
 msgstr ""
 
-#: classes/Settings.php:1437
+#: classes/Settings.php:1441
 msgid "Hard"
 msgstr ""
 
-#: classes/Settings.php:1437
+#: classes/Settings.php:1441
 msgid "This method will also remove all user information and content."
 msgstr ""
 
-#: classes/Settings.php:1443 includes/phrases.php:446
+#: classes/Settings.php:1447 includes/phrases.php:446
 msgid "Replace Registration Page URL to Forum Registration Page URL"
 msgstr ""
 
-#: classes/Settings.php:1451 includes/phrases.php:445
+#: classes/Settings.php:1455 includes/phrases.php:445
 msgid "Replace Login Page URL to Forum Login Page URL"
 msgstr ""
 
-#: classes/Settings.php:1459 includes/phrases.php:886
+#: classes/Settings.php:1463 includes/phrases.php:886
 msgid "Replace Reset Password Page URL to Forum Reset Password Page URL"
 msgstr ""
 
-#: classes/Settings.php:1467 includes/phrases.php:248
+#: classes/Settings.php:1471 includes/phrases.php:248
 msgid "Custom Authorization URLs"
 msgstr ""
 
-#: classes/Settings.php:1469
+#: classes/Settings.php:1473
 msgid ""
 "Use this option only if you have set other pages for authorization. wpForo "
 "doesn't change its own URLs, these options are only for other plugin "
@@ -3657,82 +3658,82 @@ msgid ""
 "you can set your profile plugin url"
 msgstr ""
 
-#: classes/Settings.php:1476 includes/phrases.php:348
+#: classes/Settings.php:1480 includes/phrases.php:348
 msgid "Login URL"
 msgstr ""
 
-#: classes/Settings.php:1484 includes/phrases.php:438
+#: classes/Settings.php:1488 includes/phrases.php:438
 msgid "Register URL"
 msgstr ""
 
-#: classes/Settings.php:1492
+#: classes/Settings.php:1496
 msgid "Lost Password"
 msgstr ""
 
-#: classes/Settings.php:1500
+#: classes/Settings.php:1504
 msgid "Custom Redirection URLs after following actions:"
 msgstr ""
 
-#: classes/Settings.php:1502
+#: classes/Settings.php:1506
 msgid "For member profile, account and subscription pages use following URLs:"
 msgstr ""
 
-#: classes/Settings.php:1533
+#: classes/Settings.php:1537
 msgid "Facebook API Configuration"
 msgstr ""
 
-#: classes/Settings.php:1535
+#: classes/Settings.php:1539
 msgid ""
 "In order to get an App ID and Secret Key from Facebook, you’ll need to "
 "register a new application. Don’t worry – its very easy, and your application "
 "doesn't need to do anything. We only need the keys."
 msgstr ""
 
-#: classes/Settings.php:1535
+#: classes/Settings.php:1539
 msgid "Please follow to this instruction"
 msgstr ""
 
-#: classes/Settings.php:1542
+#: classes/Settings.php:1546
 msgid "App ID"
 msgstr ""
 
-#: classes/Settings.php:1550
+#: classes/Settings.php:1554
 msgid "App Secret"
 msgstr ""
 
-#: classes/Settings.php:1558
+#: classes/Settings.php:1562
 msgid "Facebook Login"
 msgstr ""
 
-#: classes/Settings.php:1560
+#: classes/Settings.php:1564
 msgid "Adds Facebook Login button on Registration and Login pages."
 msgstr ""
 
-#: classes/Settings.php:1566
+#: classes/Settings.php:1570
 msgid "Facebook Login button on User Login page"
 msgstr ""
 
-#: classes/Settings.php:1574
+#: classes/Settings.php:1578
 msgid "Facebook Login button on User Registration page"
 msgstr ""
 
-#: classes/Settings.php:1582
+#: classes/Settings.php:1586
 msgid "Redirect to this page after success login"
 msgstr ""
 
-#: classes/Settings.php:1595
+#: classes/Settings.php:1599
 msgid "Custom URL, e.g.:"
 msgstr ""
 
-#: classes/Settings.php:1596
+#: classes/Settings.php:1600
 msgid "Redirect to custom URL after success login"
 msgstr ""
 
-#: classes/Settings.php:1605
+#: classes/Settings.php:1609
 msgid "Email Settings"
 msgstr ""
 
-#: classes/Settings.php:1608
+#: classes/Settings.php:1612
 msgid ""
 "Here, you can configure header information (FROM name and email) of forum "
 "specific emails. You can set administrators and moderators email addresses to "
@@ -3740,135 +3741,135 @@ msgid ""
 "find user registration, password resetting and post reporting email templates."
 msgstr ""
 
-#: classes/Settings.php:1619
+#: classes/Settings.php:1623
 msgid "FROM Name"
 msgstr ""
 
-#: classes/Settings.php:1627
+#: classes/Settings.php:1631
 msgid "FROM Email Address"
 msgstr ""
 
-#: classes/Settings.php:1635
+#: classes/Settings.php:1639
 msgid "Forum Admins Email Addresses"
 msgstr ""
 
-#: classes/Settings.php:1637 includes/phrases.php:243
+#: classes/Settings.php:1641 includes/phrases.php:243
 msgid ""
 "Comma separated email addresses of forum administrators to get forum "
 "notifications. For example post report messages."
 msgstr ""
 
-#: classes/Settings.php:1643
+#: classes/Settings.php:1647
 msgid "Notify Admins via Email on New Topic"
 msgstr ""
 
-#: classes/Settings.php:1645
+#: classes/Settings.php:1649
 msgid ""
 "Send Notification emails to all email addresses (comma separated ) of forum "
 "administrators when a new Topic is created."
 msgstr ""
 
-#: classes/Settings.php:1651
+#: classes/Settings.php:1655
 msgid "Notify Admins via Email on New Post"
 msgstr ""
 
-#: classes/Settings.php:1653
+#: classes/Settings.php:1657
 msgid ""
 "Send Notification emails to all email addresses (comma separated ) of forum "
 "administrators when a new Reply is created."
 msgstr ""
 
-#: classes/Settings.php:1659
+#: classes/Settings.php:1663
 msgid "Stop Sending Emails to Admins on New User Registration"
 msgstr ""
 
-#: classes/Settings.php:1661
+#: classes/Settings.php:1665
 msgid ""
 "If you have enabled this option, after registering, the admin will not receive "
 "an email notification for newly registered user."
 msgstr ""
 
-#: classes/Settings.php:1667
+#: classes/Settings.php:1671
 msgid "Report Message Subject"
 msgstr ""
 
-#: classes/Settings.php:1676
+#: classes/Settings.php:1680
 msgid "Report Message Body"
 msgstr ""
 
-#: classes/Settings.php:1684
+#: classes/Settings.php:1688
 msgid "Reporter user display name"
 msgstr ""
 
-#: classes/Settings.php:1685
+#: classes/Settings.php:1689
 msgid "Reporter user message"
 msgstr ""
 
-#: classes/Settings.php:1686
+#: classes/Settings.php:1690
 msgid "Reported post URL"
 msgstr ""
 
-#: classes/Settings.php:1693
+#: classes/Settings.php:1697
 msgid "Overwrite WordPress New User Registration Email for Admins"
 msgstr ""
 
-#: classes/Settings.php:1701 classes/Settings.php:1735 classes/Settings.php:1783
+#: classes/Settings.php:1705 classes/Settings.php:1739 classes/Settings.php:1787
 msgid "Message Subject"
 msgstr ""
 
-#: classes/Settings.php:1710 classes/Settings.php:1744 classes/Settings.php:1792
+#: classes/Settings.php:1714 classes/Settings.php:1748 classes/Settings.php:1796
 msgid "Message Body"
 msgstr ""
 
-#: classes/Settings.php:1718
+#: classes/Settings.php:1722
 msgid "Website name"
 msgstr ""
 
-#: classes/Settings.php:1719 classes/Settings.php:1751 classes/Settings.php:1775
+#: classes/Settings.php:1723 classes/Settings.php:1755 classes/Settings.php:1779
 msgid "Registered user login"
 msgstr ""
 
-#: classes/Settings.php:1720
+#: classes/Settings.php:1724
 msgid "Registered user email"
 msgstr ""
 
-#: classes/Settings.php:1727
+#: classes/Settings.php:1731
 msgid "Overwrite WordPress New User Registration Email for Users"
 msgstr ""
 
-#: classes/Settings.php:1752 classes/Settings.php:1776
+#: classes/Settings.php:1756 classes/Settings.php:1780
 msgid "Link to open password reset form"
 msgstr ""
 
-#: classes/Settings.php:1759
+#: classes/Settings.php:1763
 msgid "Overwrite WordPress Reset Password Emails"
 msgstr ""
 
-#: classes/Settings.php:1768
+#: classes/Settings.php:1772
 msgid "Reset Password message body"
 msgstr ""
 
-#: classes/Settings.php:1801
+#: classes/Settings.php:1805
 msgid "WordPress Blog Name"
 msgstr ""
 
-#: classes/Settings.php:1802
+#: classes/Settings.php:1806
 msgid "Approved User Login"
 msgstr ""
 
-#: classes/Settings.php:1803
+#: classes/Settings.php:1807
 msgid "Approved User Login Link"
 msgstr ""
 
-#: classes/Settings.php:1804
+#: classes/Settings.php:1808
 msgid "Approved User Login URL"
 msgstr ""
 
-#: classes/Settings.php:1812
+#: classes/Settings.php:1816
 msgid "Subscriptions &amp; Mentioning"
 msgstr ""
 
-#: classes/Settings.php:1815
+#: classes/Settings.php:1819
 msgid ""
 "wpForo has almost all kind of way to keep forum users updated about the latest "
 "posted content. Users can subscribe to forums and topics, they can be "
@@ -3877,49 +3878,49 @@ msgid ""
 "this admin section."
 msgstr ""
 
-#: classes/Settings.php:1826 includes/phrases.php:800
+#: classes/Settings.php:1830 includes/phrases.php:800
 msgid "Enable Subscription Confirmation"
 msgstr ""
 
-#: classes/Settings.php:1828 includes/phrases.php:801
+#: classes/Settings.php:1832 includes/phrases.php:801
 msgid "Forum and Topic subscription with double opt-in/confirmation system."
 msgstr ""
 
-#: classes/Settings.php:1834
+#: classes/Settings.php:1838
 msgid "Topic subscription option on post editor"
 msgstr ""
 
-#: classes/Settings.php:1836
+#: classes/Settings.php:1840
 msgid ""
 "This option adds topic subscription checkbox next to new topic and post submit "
 "button."
 msgstr ""
 
-#: classes/Settings.php:1842
+#: classes/Settings.php:1846
 msgid "Topic subscription option on post editor - checked/enabled"
 msgstr ""
 
-#: classes/Settings.php:1844
+#: classes/Settings.php:1848
 msgid ""
 "Enable this option if you want the topic subscription checkbox to be checked "
 "by default."
 msgstr ""
 
-#: classes/Settings.php:1850
+#: classes/Settings.php:1854
 msgid "Enable User Mentioning"
 msgstr ""
 
-#: classes/Settings.php:1852
+#: classes/Settings.php:1856
 msgid ""
 "If this option is enabled, users will receive email notification when someone "
 "uses @nickname of the user in posts."
 msgstr ""
 
-#: classes/Settings.php:1858
+#: classes/Settings.php:1862
 msgid "Enable User Following"
 msgstr ""
 
-#: classes/Settings.php:1860
+#: classes/Settings.php:1864
 msgid ""
 "If this option is enabled, the [Follow] button will be displayed on user's "
 "profile pages, allowing users to subscribe to certain users topics and posts. "
@@ -3927,155 +3928,155 @@ msgid ""
 "a new topic or post."
 msgstr ""
 
-#: classes/Settings.php:1866 includes/phrases.php:500
+#: classes/Settings.php:1870 includes/phrases.php:500
 msgid "Subscribe confirmation email subject"
 msgstr ""
 
-#: classes/Settings.php:1875 includes/phrases.php:499
+#: classes/Settings.php:1879 includes/phrases.php:499
 msgid "Subscribe confirmation email message"
 msgstr ""
 
-#: classes/Settings.php:1883
+#: classes/Settings.php:1887
 msgid "Subscribed forum or topic title"
 msgstr ""
 
-#: classes/Settings.php:1884 classes/Settings.php:1913 classes/Settings.php:1946
-#: classes/Settings.php:2007
+#: classes/Settings.php:1888 classes/Settings.php:1917 classes/Settings.php:1950
+#: classes/Settings.php:2011
 msgid "Subscriber display name"
 msgstr ""
 
-#: classes/Settings.php:1885
+#: classes/Settings.php:1889
 msgid "Link to confirm subscription"
 msgstr ""
 
-#: classes/Settings.php:1892 includes/phrases.php:381
+#: classes/Settings.php:1896 includes/phrases.php:381
 msgid "New topic notification email subject"
 msgstr ""
 
-#: classes/Settings.php:1901 includes/phrases.php:380
+#: classes/Settings.php:1905 includes/phrases.php:380
 msgid "New topic notification email message"
 msgstr ""
 
-#: classes/Settings.php:1914
+#: classes/Settings.php:1918
 msgid "New topic author display name"
 msgstr ""
 
-#: classes/Settings.php:1915
+#: classes/Settings.php:1919
 msgid "Forum title / link"
 msgstr ""
 
-#: classes/Settings.php:1916 classes/Settings.php:1948
+#: classes/Settings.php:1920 classes/Settings.php:1952
 msgid "Topic title / link"
 msgstr ""
 
-#: classes/Settings.php:1917
+#: classes/Settings.php:1921
 msgid "New topic title"
 msgstr ""
 
-#: classes/Settings.php:1918
+#: classes/Settings.php:1922
 msgid "New topic excerpt"
 msgstr ""
 
-#: classes/Settings.php:1919 classes/Settings.php:1951 classes/Settings.php:2011
+#: classes/Settings.php:1923 classes/Settings.php:1955 classes/Settings.php:2015
 msgid "Link to unsubscribe"
 msgstr ""
 
-#: classes/Settings.php:1926 includes/phrases.php:379
+#: classes/Settings.php:1930 includes/phrases.php:379
 msgid "New reply notification email subject"
 msgstr ""
 
-#: classes/Settings.php:1935 includes/phrases.php:378
+#: classes/Settings.php:1939 includes/phrases.php:378
 msgid "New reply notification email message"
 msgstr ""
 
-#: classes/Settings.php:1947
+#: classes/Settings.php:1951
 msgid "New reply author display name"
 msgstr ""
 
-#: classes/Settings.php:1949
+#: classes/Settings.php:1953
 msgid "New reply title"
 msgstr ""
 
-#: classes/Settings.php:1950
+#: classes/Settings.php:1954
 msgid "New reply excerpt"
 msgstr ""
 
-#: classes/Settings.php:1958
+#: classes/Settings.php:1962
 msgid "User mention message subject"
 msgstr ""
 
-#: classes/Settings.php:1967
+#: classes/Settings.php:1971
 msgid "User Mention message body"
 msgstr ""
 
-#: classes/Settings.php:1977
+#: classes/Settings.php:1981
 msgid "Mentioned user display name"
 msgstr ""
 
-#: classes/Settings.php:1978
+#: classes/Settings.php:1982
 msgid "Post author display name"
 msgstr ""
 
-#: classes/Settings.php:1979 includes/phrases.php:523
+#: classes/Settings.php:1983 includes/phrases.php:523
 msgid "Topic title"
 msgstr ""
 
-#: classes/Settings.php:1980
+#: classes/Settings.php:1984
 msgid "Link to the post"
 msgstr ""
 
-#: classes/Settings.php:1981
+#: classes/Settings.php:1985
 msgid "Mentioned post excerpt"
 msgstr ""
 
-#: classes/Settings.php:1988
+#: classes/Settings.php:1992
 msgid "User following notification email subject"
 msgstr ""
 
-#: classes/Settings.php:1997
+#: classes/Settings.php:2001
 msgid "User following notification email message"
 msgstr ""
 
-#: classes/Settings.php:2008
+#: classes/Settings.php:2012
 msgid "New post author display name"
 msgstr ""
 
-#: classes/Settings.php:2009
+#: classes/Settings.php:2013
 msgid "New post title"
 msgstr ""
 
-#: classes/Settings.php:2010
+#: classes/Settings.php:2014
 msgid "New post excerpt"
 msgstr ""
 
-#: classes/Settings.php:2019
+#: classes/Settings.php:2023
 msgid "Forum Notifications"
 msgstr ""
 
-#: classes/Settings.php:2022
+#: classes/Settings.php:2026
 msgid ""
 "As an addition to email notification functions, wpForo has in-forum "
 "notification system. You can see the notification bell on forum menu bar or in "
 "the sidebar with 'My Profile and Notifications' widget."
 msgstr ""
 
-#: classes/Settings.php:2033
+#: classes/Settings.php:2037
 msgid "Enable User Notification"
 msgstr ""
 
-#: classes/Settings.php:2041
+#: classes/Settings.php:2045
 msgid "Enable User Notification Live Update"
 msgstr ""
 
-#: classes/Settings.php:2049
+#: classes/Settings.php:2053
 msgid "Display User Notification Bell on Menu Bar"
 msgstr ""
 
-#: classes/Settings.php:2058
+#: classes/Settings.php:2062
 msgid "Action Logging &amp; Views"
 msgstr ""
 
-#: classes/Settings.php:2061
+#: classes/Settings.php:2065
 msgid ""
 "wpForo logging system allows tracking and providing live information about "
 "forum viewers. It detects read/unread status of forums and posts for guests "
@@ -4083,80 +4084,80 @@ msgid ""
 "features of the forum logging system."
 msgstr ""
 
-#: classes/Settings.php:2072 includes/phrases.php:885
+#: classes/Settings.php:2076 includes/phrases.php:885
 msgid "Log Viewed Forums and Topics"
 msgstr ""
 
-#: classes/Settings.php:2080
+#: classes/Settings.php:2084
 msgid "Track Forum and Topic Current Viewers"
 msgstr ""
 
-#: classes/Settings.php:2088
+#: classes/Settings.php:2092
 msgid "Topic Links - Jump to First Unread Post"
 msgstr ""
 
-#: classes/Settings.php:2090
+#: classes/Settings.php:2094
 msgid ""
 "If this option is enabled, all topic links on forums page and on topics page "
 "will refer to the first unread post. This behavior is only enabled for logged-"
 "in users."
 msgstr ""
 
-#: classes/Settings.php:2096
+#: classes/Settings.php:2100
 msgid "Jump to First Unread Post with [new] Button in Topic Link"
 msgstr ""
 
-#: classes/Settings.php:2098
+#: classes/Settings.php:2102
 msgid ""
 "Adds [new] button at the and of topic links, which jumps to the first unread "
 "post."
 msgstr ""
 
-#: classes/Settings.php:2104
+#: classes/Settings.php:2108
 msgid "Display Forum Current Viewers"
 msgstr ""
 
-#: classes/Settings.php:2106
+#: classes/Settings.php:2110
 msgid ""
 "Displays information about forum current viewers (x viewing) next to forum "
 "title."
 msgstr ""
 
-#: classes/Settings.php:2112
+#: classes/Settings.php:2116
 msgid "Display Topic Current Viewers"
 msgstr ""
 
-#: classes/Settings.php:2114
+#: classes/Settings.php:2118
 msgid ""
 "Displays information about topic current viewers (x viewing) next to topic "
 "title"
 msgstr ""
 
-#: classes/Settings.php:2120
+#: classes/Settings.php:2124
 msgid "Display Recent Viewers in the Topic Footer"
 msgstr ""
 
-#: classes/Settings.php:2122
+#: classes/Settings.php:2126
 msgid ""
 "Displays information about topic recent viewers (users visited within last one "
 "hour)"
 msgstr ""
 
-#: classes/Settings.php:2128
+#: classes/Settings.php:2132
 msgid "Display Administrators in the Topic Recent Viewers Section"
 msgstr ""
 
-#: classes/Settings.php:2130
+#: classes/Settings.php:2134
 msgid ""
 "By disabling this option you can exclude forum administrators from the topic "
 "viewers section."
 msgstr ""
 
-#: classes/Settings.php:2137
+#: classes/Settings.php:2141
 msgid "wpForo SEO"
 msgstr ""
 
-#: classes/Settings.php:2140
+#: classes/Settings.php:2144
 msgid ""
 "wpForo comes with built-in powerful forum SEO features. wpForo doesn't need "
 "any SEO plugin, however you should use SEO plugins for other parts of your "
@@ -4164,56 +4165,56 @@ msgid ""
 "pages and generates all necessary SEO meta tags."
 msgstr ""
 
-#: classes/Settings.php:2151
+#: classes/Settings.php:2155
 msgid "Enable Meta Titles"
 msgstr ""
 
-#: classes/Settings.php:2159
+#: classes/Settings.php:2163
 msgid "Enable Meta Tags"
 msgstr ""
 
-#: classes/Settings.php:2167
+#: classes/Settings.php:2171
 msgid "Enable User Profile Page indexing"
 msgstr ""
 
-#: classes/Settings.php:2175
+#: classes/Settings.php:2179
 msgid "Enable Forums Sitemap"
 msgstr ""
 
-#: classes/Settings.php:2183
+#: classes/Settings.php:2187
 msgid "Enable Topics Sitemap"
 msgstr ""
 
-#: classes/Settings.php:2191
+#: classes/Settings.php:2195
 msgid "Enable Members Sitemap"
 msgstr ""
 
-#: classes/Settings.php:2200
+#: classes/Settings.php:2204
 msgid "Allowed dofollow domains"
 msgstr ""
 
-#: classes/Settings.php:2202
+#: classes/Settings.php:2206
 msgid ""
 "wpForo adds nofollow to all links with external URLs. If you want to keep some "
 "domains as internal please insert domains one per line in the textarea bellow."
 msgstr ""
 
-#: classes/Settings.php:2209
+#: classes/Settings.php:2213
 msgid "Noindex forum page URLs"
 msgstr ""
 
-#: classes/Settings.php:2211
+#: classes/Settings.php:2215
 msgid ""
 "The noIndex code tells Google and other search engines to NOT index the page, "
 "so that it cannot be found in search results. Please insert page URLs you do "
 "not want to be indexed one per line in the textarea bellow."
 msgstr ""
 
-#: classes/Settings.php:2218
+#: classes/Settings.php:2222
 msgid "Spam Protection"
 msgstr ""
 
-#: classes/Settings.php:2221
+#: classes/Settings.php:2225
 msgid ""
 "Here you can find many ways to protect your forum from spammers. Most of them "
 "are already configured and enabled with default values. You can make spam "
@@ -4222,59 +4223,59 @@ msgid ""
 "Akismet."
 msgstr ""
 
-#: classes/Settings.php:2232
+#: classes/Settings.php:2236
 msgid "Enable wpForo Spam Control"
 msgstr ""
 
-#: classes/Settings.php:2240
+#: classes/Settings.php:2244
 msgid "Ban user when spam is suspected"
 msgstr ""
 
-#: classes/Settings.php:2250
+#: classes/Settings.php:2254
 msgid "Spam Suspicion Level for Topics"
 msgstr ""
 
-#: classes/Settings.php:2260
+#: classes/Settings.php:2264
 msgid "Spam Suspicion Level for Posts"
 msgstr ""
 
-#: classes/Settings.php:2269
+#: classes/Settings.php:2273
 msgid "User is New (under hard spam control) during first [X] posts"
 msgstr ""
 
-#: classes/Settings.php:2277
+#: classes/Settings.php:2281
 msgid "Posts must be manually approved"
 msgstr ""
 
-#: classes/Settings.php:2286
+#: classes/Settings.php:2290
 msgid "Min number of posts to be able to edit profile information"
 msgstr ""
 
-#: classes/Settings.php:2295
+#: classes/Settings.php:2299
 msgid "Min number of posts to be able to attach files"
 msgstr ""
 
-#: classes/Settings.php:2304
+#: classes/Settings.php:2308
 msgid "Min number of posts to be able to post links"
 msgstr ""
 
-#: classes/Settings.php:2312
+#: classes/Settings.php:2316
 msgid "Do not allow attaching files with following extensions"
 msgstr ""
 
-#: classes/Settings.php:2320
+#: classes/Settings.php:2324
 msgid "Enable File Scanner"
 msgstr ""
 
-#: classes/Settings.php:2328
+#: classes/Settings.php:2332
 msgid "Exclude file extensions"
 msgstr ""
 
-#: classes/Settings.php:2337 includes/hooks.php:2682
+#: classes/Settings.php:2341 includes/hooks.php:2687
 msgid "Google reCAPTCHA"
 msgstr ""
 
-#: classes/Settings.php:2340
+#: classes/Settings.php:2344
 msgid ""
 "reCAPTCHA protects you against spam and other types of automated abuse. It "
 "makes secure topic and post editors when Guest Posting is allowed, also it "
@@ -4282,65 +4283,65 @@ msgid ""
 "built-in reCAPTCHA version 2, \"I'm not a robot\" checkbox."
 msgstr ""
 
-#: classes/Settings.php:2351
+#: classes/Settings.php:2355
 msgid "reCAPTCHA API Keys"
 msgstr ""
 
-#: classes/Settings.php:2351
+#: classes/Settings.php:2355
 msgid "(version 2, \"I'm not a robot\" checkbox)"
 msgstr ""
 
-#: classes/Settings.php:2353
+#: classes/Settings.php:2357
 msgid ""
 "To start using reCAPTCHA, you need to sign up for an API key pair for your "
 "site."
 msgstr ""
 
-#: classes/Settings.php:2353
+#: classes/Settings.php:2357
 msgid "Register your site and get API keys here &raquo;"
 msgstr ""
 
-#: classes/Settings.php:2376
+#: classes/Settings.php:2380
 msgid "reCAPTCHA Theme"
 msgstr ""
 
-#: classes/Settings.php:2388
+#: classes/Settings.php:2392
 msgid "Guest Topic Editor"
 msgstr ""
 
-#: classes/Settings.php:2396
+#: classes/Settings.php:2400
 msgid "Guest Post Editor"
 msgstr ""
 
-#: classes/Settings.php:2404
+#: classes/Settings.php:2408
 msgid "wpForo Login Form"
 msgstr ""
 
-#: classes/Settings.php:2412
+#: classes/Settings.php:2416
 msgid "wpForo Registration Form"
 msgstr ""
 
-#: classes/Settings.php:2420
+#: classes/Settings.php:2424
 msgid "wpForo Reset Password Form"
 msgstr ""
 
-#: classes/Settings.php:2428
+#: classes/Settings.php:2432
 msgid "WordPress Login Form"
 msgstr ""
 
-#: classes/Settings.php:2436
+#: classes/Settings.php:2440
 msgid "WordPress Registration Form"
 msgstr ""
 
-#: classes/Settings.php:2444
+#: classes/Settings.php:2448
 msgid "WordPress Reset Password Form"
 msgstr ""
 
-#: classes/Settings.php:2453
+#: classes/Settings.php:2457
 msgid "Akismet Antispam Integration"
 msgstr ""
 
-#: classes/Settings.php:2456
+#: classes/Settings.php:2460
 msgid ""
 "Akismet checks your forum posts with authors form submissions against their "
 "global database of spam to prevent your site from publishing malicious "
@@ -4348,21 +4349,21 @@ msgid ""
 "Control more intuitive and productive."
 msgstr ""
 
-#: classes/Settings.php:2467
+#: classes/Settings.php:2471
 msgid "Enable Akismet Integration"
 msgstr ""
 
-#: classes/Settings.php:2469
+#: classes/Settings.php:2473
 msgid ""
 "Please make sure the Akismet plugin installed and the Akismet API keys are "
 "configured."
 msgstr ""
 
-#: classes/Settings.php:2476
+#: classes/Settings.php:2480
 msgid "Forum Feed / RSS"
 msgstr ""
 
-#: classes/Settings.php:2479
+#: classes/Settings.php:2483
 msgid ""
 "RSS (Rich Site Summary; originally RDF Site Summary; often called Really "
 "Simple Syndication) uses a family of standard web feed formats to publish "
@@ -4371,27 +4372,27 @@ msgid ""
 "post  titles/links/excerpt publishing date and author’s name."
 msgstr ""
 
-#: classes/Settings.php:2490 includes/phrases.php:887
+#: classes/Settings.php:2494 includes/phrases.php:887
 msgid "Enable RSS Feed"
 msgstr ""
 
-#: classes/Settings.php:2498
+#: classes/Settings.php:2502
 msgid "Enable General RSS Feed"
 msgstr ""
 
-#: classes/Settings.php:2506
+#: classes/Settings.php:2510
 msgid "Enable Forum RSS Feed"
 msgstr ""
 
-#: classes/Settings.php:2514
+#: classes/Settings.php:2518
 msgid "Enable Topic RSS Feed"
 msgstr ""
 
-#: classes/Settings.php:2523
+#: classes/Settings.php:2527
 msgid "Social Share"
 msgstr ""
 
-#: classes/Settings.php:2526
+#: classes/Settings.php:2530
 msgid ""
 "Here you can find social network sharing options. wpForo allows sharing almost "
 "all forum content (forums, topics, posts individually). The share button style "
@@ -4399,11 +4400,11 @@ msgid ""
 "type, location, etc..."
 msgstr ""
 
-#: classes/Settings.php:2536
+#: classes/Settings.php:2540
 msgid "Active Share Buttons"
 msgstr ""
 
-#: classes/Settings.php:2538
+#: classes/Settings.php:2542
 msgid ""
 "Check the checkbox share options to activate. Please note, that the Facebook "
 "share button cannot be activated without Facebook API ID. Please follow to the "
@@ -4412,30 +4413,30 @@ msgid ""
 "button."
 msgstr ""
 
-#: classes/Settings.php:2544
+#: classes/Settings.php:2548
 msgid "Enable General Share Buttons"
 msgstr ""
 
-#: classes/Settings.php:2546
+#: classes/Settings.php:2550
 msgid ""
 "General share buttons are forum and topic sharing buttons. They are located on "
 "the top and the bottom of each page. You can manage location of these buttons "
 "using 'Share Buttons Location' options below."
 msgstr ""
 
-#: classes/Settings.php:2552
+#: classes/Settings.php:2556
 msgid "Enable Post Sharing Toggle"
 msgstr ""
 
-#: classes/Settings.php:2560
+#: classes/Settings.php:2564
 msgid "General Share Buttons Color"
 msgstr ""
 
-#: classes/Settings.php:2572
+#: classes/Settings.php:2576
 msgid "General Share Buttons Type"
 msgstr ""
 
-#: classes/Settings.php:2586
+#: classes/Settings.php:2590
 msgid ""
 "Post sharing toggle allows you to share posts individually. You can see post "
 "sharing toggles on the left, right side or in top bar of each post. The toggle "
@@ -4445,38 +4446,38 @@ msgid ""
 "original colors on mouse hover."
 msgstr ""
 
-#: classes/Settings.php:2592
+#: classes/Settings.php:2596
 msgid "Post Sharing Toggle View"
 msgstr ""
 
-#: classes/Settings.php:2604
+#: classes/Settings.php:2608
 msgid "Post Sharing Toggle Icon"
 msgstr ""
 
-#: classes/Settings.php:2616
+#: classes/Settings.php:2620
 msgid "General Share Button Locations"
 msgstr ""
 
-#: classes/Settings.php:2618
+#: classes/Settings.php:2622
 msgid ""
 "The general share buttons can be displayed on both (top and bottom) locations."
 msgstr ""
 
-#: classes/Settings.php:2623
+#: classes/Settings.php:2627
 msgid "Post Sharing Toggle Locations"
 msgstr ""
 
-#: classes/Settings.php:2625
+#: classes/Settings.php:2629
 msgid ""
 "The post sharing toggle can be displayed either on the left side or on the top "
 "of each post."
 msgstr ""
 
-#: classes/Settings.php:2632
+#: classes/Settings.php:2636
 msgid "BuddyPress Integration"
 msgstr ""
 
-#: classes/Settings.php:2635
+#: classes/Settings.php:2639
 msgid ""
 "wpForo is well integrated with BuddyPress and with all plugins and themes "
 "based on BuddyPress. The integration includes changing forum profile page URL "
@@ -4484,41 +4485,41 @@ msgid ""
 "BuddyPress profile page."
 msgstr ""
 
-#: classes/Settings.php:2646
+#: classes/Settings.php:2650
 msgid "BuddyPress Activity Integration"
 msgstr ""
 
-#: classes/Settings.php:2648
+#: classes/Settings.php:2652
 msgid ""
 "Posts members activity (new topic, new reply, post like) to BuddyPress Profile "
 "Activity page."
 msgstr ""
 
-#: classes/Settings.php:2654
+#: classes/Settings.php:2658
 msgid "BuddyPress Notification Integration"
 msgstr ""
 
-#: classes/Settings.php:2656
+#: classes/Settings.php:2660
 msgid ""
 "Creates notification on new forum reply in BuddyPress Profile Notification "
 "page."
 msgstr ""
 
-#: classes/Settings.php:2662
+#: classes/Settings.php:2666
 msgid "BuddyPress Profile Forum Tab Integration"
 msgstr ""
 
-#: classes/Settings.php:2664
+#: classes/Settings.php:2668
 msgid ""
 "Adds 'Forums' tab with 'Created Topics', 'Posted Replies', 'Liked Posts' and "
 "'Subscriptions' sub-tabs to BuddyPress Profile page."
 msgstr ""
 
-#: classes/Settings.php:2671
+#: classes/Settings.php:2675
 msgid "Ultimate Members Integration"
 msgstr ""
 
-#: classes/Settings.php:2674
+#: classes/Settings.php:2678
 msgid ""
 "wpForo is well integrated with Ultimate Members plugin. The integration "
 "includes changing forum profile page URL to Ultimate Members profile page URL, "
@@ -4526,80 +4527,80 @@ msgid ""
 "Ultimate Members' Real-time Notifications addon."
 msgstr ""
 
-#: classes/Settings.php:2685
+#: classes/Settings.php:2689
 msgid "Ultimate Member Notification Integration"
 msgstr ""
 
-#: classes/Settings.php:2687
+#: classes/Settings.php:2691
 msgid ""
 "Creates notification on new forum reply in Ultimate Member Real-time "
 "Notification system. This integration requires"
 msgstr ""
 
-#: classes/Settings.php:2687
+#: classes/Settings.php:2691
 msgid "plugin."
 msgstr ""
 
-#: classes/Settings.php:2693
+#: classes/Settings.php:2697
 msgid "Ultimate Member Profile Forum Tab Integration"
 msgstr ""
 
-#: classes/Settings.php:2695
+#: classes/Settings.php:2699
 msgid ""
 "Adds 'Forums' tab with 'Created Topics', 'Posted Replies', 'Liked Posts' and "
 "'Subscriptions' sub-tabs to Ultimate Member Profile page."
 msgstr ""
 
-#: classes/Settings.php:2702
+#: classes/Settings.php:2706
 msgid "Privacy & Forum Rules"
 msgstr ""
 
-#: classes/Settings.php:2715
+#: classes/Settings.php:2719
 msgid "Contact Information"
 msgstr ""
 
-#: classes/Settings.php:2717
+#: classes/Settings.php:2721
 msgid ""
 "According to the GDPR, all users should have an option to contact website "
 "administrator in following cases: "
 msgstr ""
 
-#: classes/Settings.php:2717
+#: classes/Settings.php:2721
 msgid "Obtain personal data and created content"
 msgstr ""
 
-#: classes/Settings.php:2717
+#: classes/Settings.php:2721
 msgid "Delete account with created content"
 msgstr ""
 
-#: classes/Settings.php:2717
+#: classes/Settings.php:2721
 msgid "Report user data access and control issue"
 msgstr ""
 
-#: classes/Settings.php:2717
+#: classes/Settings.php:2721
 msgid "Report user rights violation"
 msgstr ""
 
-#: classes/Settings.php:2720
+#: classes/Settings.php:2724
 msgid "URL to contact forum administrator"
 msgstr ""
 
-#: classes/Settings.php:2724
+#: classes/Settings.php:2728
 msgid "Checkbox: I Accept Website Terms and Privacy Policy"
 msgstr ""
 
-#: classes/Settings.php:2726
+#: classes/Settings.php:2730
 msgid ""
 "If this option is enabled, users must accept forum Terms and Privacy Policy by "
 "checking the required checkbox on registration form to be able create a forum "
 "account. The checkbox label can be managed in Forums > Phrases admin page."
 msgstr ""
 
-#: classes/Settings.php:2732
+#: classes/Settings.php:2736
 msgid "Checkbox: I Agree to Receive an Email Confirmation"
 msgstr ""
 
-#: classes/Settings.php:2734
+#: classes/Settings.php:2738
 msgid ""
 "If this option is enabled, users must agree to receive an email confirmation "
 "with a link to set a password by checking the required checkbox on "
@@ -4607,26 +4608,26 @@ msgid ""
 "managed in Forums > Phrases admin page."
 msgstr ""
 
-#: classes/Settings.php:2740
+#: classes/Settings.php:2744
 msgid "Page URL to Website Terms"
 msgstr ""
 
-#: classes/Settings.php:2742
+#: classes/Settings.php:2746
 msgid ""
 "Please insert URLs to your website Terms and Conditions. Links to these pages "
 "will be included in registration form checkbox label (I'm agree with website "
 "terms and privacy policy)."
 msgstr ""
 
-#: classes/Settings.php:2745
+#: classes/Settings.php:2749
 msgid "Page URL to website terms"
 msgstr ""
 
-#: classes/Settings.php:2749
+#: classes/Settings.php:2753
 msgid "Page URL to Website Privacy Policy"
 msgstr ""
 
-#: classes/Settings.php:2751
+#: classes/Settings.php:2755
 msgid ""
 "Please insert URLs to your website Terms and Privacy Policy pages. Links to "
 "these pages will be included in registration form checkbox label (I'm agree "
@@ -4635,26 +4636,26 @@ msgid ""
 "your website main Privacy Policy. Thus it should be linked to according pages."
 msgstr ""
 
-#: classes/Settings.php:2754
+#: classes/Settings.php:2758
 msgid "Page URL to website privacy policy"
 msgstr ""
 
-#: classes/Settings.php:2758
+#: classes/Settings.php:2762
 msgid "Checkbox: I Agree to Forum Privacy Policy"
 msgstr ""
 
-#: classes/Settings.php:2760
+#: classes/Settings.php:2764
 msgid ""
 "If this option is enabled, users must accept forum Terms and Privacy Policy by "
 "checking the required checkbox on registration form to be able create a forum "
 "account. The checkbox label can be managed in Forums > Phrases admin page"
 msgstr ""
 
-#: classes/Settings.php:2769
+#: classes/Settings.php:2773
 msgid "Forum Privacy Policy with GDPR compliant Template"
 msgstr ""
 
-#: classes/Settings.php:2771
+#: classes/Settings.php:2775
 msgid ""
 "This is an example of forum Privacy Policy with GDPR compliant. It adapted to "
 "wpForo plugin functions and features. <u>In case you enable this privacy "
@@ -4668,11 +4669,11 @@ msgid ""
 "privacy policy page for website please add a link to that page."
 msgstr ""
 
-#: classes/Settings.php:2776
+#: classes/Settings.php:2780
 msgid "Checkbox: I Agree to create a forum account on Facebook Login"
 msgstr ""
 
-#: classes/Settings.php:2778
+#: classes/Settings.php:2782
 msgid ""
 "If this option is enabled, the Facebook Login button becomes not-clickable "
 "until user accept automatic account creation process based on his/her Facebook "
@@ -4680,18 +4681,18 @@ msgid ""
 "displayed with Facebook Login button to comply with the GDPR"
 msgstr ""
 
-#: classes/Settings.php:2778
+#: classes/Settings.php:2782
 msgid ""
 "The note text and the label of this checkbox can be managed in Forums &gt; "
 "Phrases admin page. Search the label phrase, click on edit button and change "
 "it."
 msgstr ""
 
-#: classes/Settings.php:2784
+#: classes/Settings.php:2788
 msgid "Forum Cookies"
 msgstr ""
 
-#: classes/Settings.php:2786
+#: classes/Settings.php:2790
 msgid ""
 "Please note, that this option is only related to wpForo cookies. This doesn't "
 "disable WordPress and other plugins cookies. wpForo stores a small amount of "
@@ -4704,11 +4705,11 @@ msgid ""
 "these fields when he/she posts a new reply or creates a new topic."
 msgstr ""
 
-#: classes/Settings.php:2792
+#: classes/Settings.php:2796
 msgid "Checkbox: I Accept Forum Rules"
 msgstr ""
 
-#: classes/Settings.php:2794
+#: classes/Settings.php:2798
 msgid ""
 "If this option is enabled, users must accept forum rules by checking the "
 "required checkbox on registration form to be able create a forum account. The "
@@ -4716,117 +4717,117 @@ msgid ""
 "Search the label phrase, click on edit button and change it."
 msgstr ""
 
-#: classes/Settings.php:2803
+#: classes/Settings.php:2807
 msgid "Forum Rules Text"
 msgstr ""
 
-#: classes/Settings.php:2805
+#: classes/Settings.php:2809
 msgid "This is a basic example of forum rules provided by"
 msgstr ""
 
-#: classes/Settings.php:2805
+#: classes/Settings.php:2809
 msgid "You should edit this text and adapt it to your community rules."
 msgstr ""
 
-#: classes/Settings.php:3065
+#: classes/Settings.php:3050
 msgid "TB"
 msgstr ""
 
-#: classes/Settings.php:3070
+#: classes/Settings.php:3055
 msgid "GB"
 msgstr ""
 
-#: classes/Settings.php:3075 includes/phrases.php:352
+#: classes/Settings.php:3060 includes/phrases.php:352
 msgid "MB"
 msgstr ""
 
-#: classes/Settings.php:3080
+#: classes/Settings.php:3065
 msgid "KB"
 msgstr ""
 
-#: classes/Settings.php:3085
+#: classes/Settings.php:3070
 msgid "B"
 msgstr ""
 
-#: classes/Settings.php:3104
+#: classes/Settings.php:3089
 msgid "Min Allowed Size is "
 msgstr ""
 
-#: classes/Settings.php:3105
+#: classes/Settings.php:3090
 msgid "Max Allowed Size is "
 msgstr ""
 
-#: classes/Settings.php:3106 includes/phrases.php:474
+#: classes/Settings.php:3091 includes/phrases.php:474
 msgid "Server \"upload_max_filesize\" is "
 msgstr ""
 
-#: classes/Settings.php:3107 includes/phrases.php:473
+#: classes/Settings.php:3092 includes/phrases.php:473
 msgid "Server \"post_max_size\" is "
 msgstr ""
 
-#: classes/Settings.php:3113
+#: classes/Settings.php:3098
 msgid "Minute"
 msgstr ""
 
-#: classes/Settings.php:3325 includes/hooks.php:1551 includes/phrases.php:433
+#: classes/Settings.php:3311 includes/hooks.php:1554 includes/phrases.php:433
 msgid "Rating Level"
 msgstr ""
 
-#: classes/Settings.php:3326
+#: classes/Settings.php:3312
 msgid "Min Number of Points"
 msgstr ""
 
-#: classes/Settings.php:3327 includes/phrases.php:362
+#: classes/Settings.php:3313 includes/phrases.php:362
 msgid "Member Title"
 msgstr ""
 
-#: classes/Settings.php:3328 includes/phrases.php:479
+#: classes/Settings.php:3314 includes/phrases.php:479
 msgid "Short Badge"
 msgstr ""
 
-#: classes/Settings.php:3329 includes/phrases.php:314
+#: classes/Settings.php:3315 includes/phrases.php:314
 msgid "Full Badge"
 msgstr ""
 
-#: classes/Settings.php:3330 includes/phrases.php:431
+#: classes/Settings.php:3316 includes/phrases.php:431
 msgid "Rating Color"
 msgstr ""
 
-#: classes/Settings.php:3331 includes/phrases.php:432
+#: classes/Settings.php:3317 includes/phrases.php:432
 msgid "Rating Icon"
 msgstr ""
 
-#: classes/Settings.php:3333 includes/phrases.php:373
+#: classes/Settings.php:3319 includes/phrases.php:373
 msgid "More"
 msgstr ""
 
-#: classes/Settings.php:3338 includes/hooks.php:1564 includes/phrases.php:344
+#: classes/Settings.php:3324 includes/hooks.php:1567 includes/phrases.php:344
 msgid "Level"
 msgstr ""
 
-#: classes/Settings.php:3342 includes/phrases.php:397
+#: classes/Settings.php:3328 includes/phrases.php:397
 msgid "Number of Posts"
 msgstr ""
 
-#: classes/Settings.php:3348 includes/phrases.php:249
+#: classes/Settings.php:3334 includes/phrases.php:249
 msgid "Custom Title"
 msgstr ""
 
-#: classes/Settings.php:3369 includes/phrases.php:234
+#: classes/Settings.php:3355 includes/phrases.php:234
 msgid "Badge Icon"
 msgstr ""
 
-#: classes/Settings.php:3824 includes/installation.php:549
+#: classes/Settings.php:3826 includes/installation.php:549
 #: includes/installation.php:1479 includes/options-migration.php:19
 #: includes/options-migration.php:98 includes/phrases.php:287
 msgid "Forum"
 msgstr ""
 
-#: classes/Settings.php:3830 includes/options-migration.php:111
+#: classes/Settings.php:3832 includes/options-migration.php:111
 msgid "Forum Post Report"
 msgstr ""
 
-#: classes/Settings.php:3831 includes/options-migration.php:112
+#: classes/Settings.php:3833 includes/options-migration.php:112
 msgid ""
 "<strong>Report details:</strong>\n"
 " Reporter: [reporter], <br>\n"
@@ -4835,11 +4836,11 @@ msgid ""
 " [post_url]"
 msgstr ""
 
-#: classes/Settings.php:3833 includes/options-migration.php:114
+#: classes/Settings.php:3835 includes/options-migration.php:114
 msgid "[blogname] New User Registration"
 msgstr ""
 
-#: classes/Settings.php:3834 includes/options-migration.php:115
+#: classes/Settings.php:3836 includes/options-migration.php:115
 msgid ""
 "New user registration on your site [blogname]:\n"
 "\n"
@@ -4848,11 +4849,11 @@ msgid ""
 "Email: [user_email]\n"
 msgstr ""
 
-#: classes/Settings.php:3836 includes/options-migration.php:117
+#: classes/Settings.php:3838 includes/options-migration.php:117
 msgid "[blogname] Your username and password info"
 msgstr ""
 
-#: classes/Settings.php:3837 includes/options-migration.php:118
+#: classes/Settings.php:3839 includes/options-migration.php:118
 msgid ""
 "Username: [user_login]\n"
 "\n"
@@ -4862,7 +4863,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: classes/Settings.php:3839 includes/options-migration.php:120
+#: classes/Settings.php:3841 includes/options-migration.php:120
 msgid ""
 "Hello! \n"
 "\n"
@@ -4879,21 +4880,21 @@ msgid ""
 " Thanks!"
 msgstr ""
 
-#: classes/Settings.php:3840
+#: classes/Settings.php:3842
 msgid "[blogname] - Your Account Has been Approved"
 msgstr ""
 
-#: classes/Settings.php:3841
+#: classes/Settings.php:3843
 msgid ""
 "Hi [user_login] , Thank you for your registration. Your account has been "
 "approved. Your can login here: [login_link]"
 msgstr ""
 
-#: classes/Settings.php:3849 includes/options-migration.php:103
+#: classes/Settings.php:3851 includes/options-migration.php:103
 msgid "Please confirm subscription to [entry_title]"
 msgstr ""
 
-#: classes/Settings.php:3850
+#: classes/Settings.php:3852
 msgid ""
 "Hello [user_display_name]!<br>\n"
 " Thank you for subscribing.<br>\n"
@@ -4904,11 +4905,11 @@ msgid ""
 " [confirm_link]"
 msgstr ""
 
-#: classes/Settings.php:3851 includes/options-migration.php:105
+#: classes/Settings.php:3853 includes/options-migration.php:105
 msgid "New Topic"
 msgstr ""
 
-#: classes/Settings.php:3852
+#: classes/Settings.php:3854
 msgid ""
 "Hello [user_display_name]!<br>\n"
 " New topic has been created on your subscribed forum - [forum_link].\n"
@@ -4922,12 +4923,12 @@ msgid ""
 " [unsubscribe_link]"
 msgstr ""
 
-#: classes/Settings.php:3853 includes/options-migration.php:107
+#: classes/Settings.php:3855 includes/options-migration.php:107
 #: includes/phrases.php:1071
 msgid "New Reply"
 msgstr ""
 
-#: classes/Settings.php:3854
+#: classes/Settings.php:3856
 msgid ""
 "Hello [user_display_name]!<br>\n"
 " New reply has been posted on your subscribed topic - [topic_link].\n"
@@ -4941,11 +4942,11 @@ msgid ""
 " [unsubscribe_link]"
 msgstr ""
 
-#: classes/Settings.php:3855 includes/options-migration.php:122
+#: classes/Settings.php:3857 includes/options-migration.php:122
 msgid "You have been mentioned in forum post"
 msgstr ""
 
-#: classes/Settings.php:3856
+#: classes/Settings.php:3858
 msgid ""
 "Hi [user_display_name]! <br>\n"
 "\n"
@@ -4955,11 +4956,11 @@ msgid ""
 " [post_link]"
 msgstr ""
 
-#: classes/Settings.php:3857
+#: classes/Settings.php:3859
 msgid "New Post from [owner_display_name]"
 msgstr ""
 
-#: classes/Settings.php:3858
+#: classes/Settings.php:3860
 msgid ""
 "Hello [user_display_name]!<br>\n"
 " New content has been posted by [owner_display_name] you are following.\n"
@@ -5089,11 +5090,11 @@ msgstr ""
 msgid "Front - Can access to add topic page"
 msgstr ""
 
-#: includes/functions-template.php:7
+#: includes/functions-template.php:8
 msgid "wpForo Menu"
 msgstr ""
 
-#: includes/functions-template.php:2244
+#: includes/functions-template.php:2320
 msgid "No Title"
 msgstr ""
 
@@ -5236,15 +5237,15 @@ msgid ""
 "WooCommerce Memberships plugin."
 msgstr ""
 
-#: includes/functions.php:787 includes/phrases.php:327
+#: includes/functions.php:783 includes/phrases.php:327
 msgid "Items"
 msgstr ""
 
-#: includes/functions.php:788 includes/phrases.php:222
+#: includes/functions.php:784 includes/phrases.php:222
 msgid "Apply"
 msgstr ""
 
-#: includes/functions.php:1260
+#: includes/functions.php:1244
 #, php-format
 msgid "Could not write file %s"
 msgstr ""
@@ -5263,66 +5264,66 @@ msgstr ""
 msgid "Uninstall"
 msgstr ""
 
-#: includes/hooks.php:1271
+#: includes/hooks.php:1274
 msgid "Clear"
 msgstr ""
 
-#: includes/hooks.php:1273
+#: includes/hooks.php:1276
 msgid "Select Color"
 msgstr ""
 
-#: includes/hooks.php:1280 includes/phrases.php:183
+#: includes/hooks.php:1283 includes/phrases.php:183
 msgid "Move"
 msgstr ""
 
-#: includes/hooks.php:1298
+#: includes/hooks.php:1301
 msgid "Please choose one reasons before sending a feedback!"
 msgstr ""
 
-#: includes/hooks.php:1300
+#: includes/hooks.php:1303
 msgid ""
 "With the email address, please check the \"I agree to receive email\" checkbox "
 "to proceed."
 msgstr ""
 
-#: includes/hooks.php:1301
+#: includes/hooks.php:1304
 msgid "Please fill your email address for feedback"
 msgstr ""
 
-#: includes/hooks.php:1302
+#: includes/hooks.php:1305
 msgid "Your email address is not valid"
 msgstr ""
 
-#: includes/hooks.php:1371
+#: includes/hooks.php:1374
 msgid ""
 "IMPORTANT: wpForo can't work with default permalink, please change permalink "
 "structure"
 msgstr ""
 
-#: includes/hooks.php:1456
+#: includes/hooks.php:1459
 msgid "Forum Profile Fields - wpForo"
 msgstr ""
 
-#: includes/hooks.php:1465
+#: includes/hooks.php:1468
 msgid "Forum - Usergroup"
 msgstr ""
 
-#: includes/hooks.php:1470
+#: includes/hooks.php:1473
 #, php-format
 msgid ""
 "Forum Usergroups are synched with User Roles based on the %s. When you change "
 "this user Role the Usergroup is automatically changed according to that table."
 msgstr ""
 
-#: includes/hooks.php:1477
+#: includes/hooks.php:1480
 msgid "Synced with user role"
 msgstr ""
 
-#: includes/hooks.php:1482
+#: includes/hooks.php:1485
 msgid "Role-Usergroup Synchronization is Turned ON!"
 msgstr ""
 
-#: includes/hooks.php:1485
+#: includes/hooks.php:1488
 msgid ""
 "This user Usergroup is automatically changed according to current Role. If you "
 "want to disable Role-Usergroup synchronization and manage Usergroups and User "
@@ -5330,19 +5331,19 @@ msgid ""
 "admin page and disable \"Role-Usergroup Synchronization\" option."
 msgstr ""
 
-#: includes/hooks.php:1499
+#: includes/hooks.php:1502
 msgid "Forum - Secondary Usergroups"
 msgstr ""
 
-#: includes/hooks.php:1523
+#: includes/hooks.php:1526
 msgid "Forum - User Timezone"
 msgstr ""
 
-#: includes/hooks.php:1534
+#: includes/hooks.php:1537
 msgid "User Reputation"
 msgstr ""
 
-#: includes/hooks.php:1536
+#: includes/hooks.php:1539
 msgid ""
 "By default all members get rating badges and titles based on number of posts. "
 "However, using this option you can grant lower or higher rating to certain "
@@ -5350,49 +5351,49 @@ msgid ""
 "be managed in Forums > Settings > Members Tab."
 msgstr ""
 
-#: includes/hooks.php:1541
+#: includes/hooks.php:1544
 msgid "Default Rating"
 msgstr ""
 
-#: includes/hooks.php:1544
+#: includes/hooks.php:1547
 msgid "Custom Rating"
 msgstr ""
 
-#: includes/hooks.php:1552 includes/phrases.php:865
+#: includes/hooks.php:1555 includes/phrases.php:865
 msgid "Rating Title"
 msgstr ""
 
-#: includes/hooks.php:1553 includes/phrases.php:430
+#: includes/hooks.php:1556 includes/phrases.php:430
 msgid "Rating Badge"
 msgstr ""
 
-#: includes/hooks.php:2192 includes/hooks.php:2240 includes/hooks.php:2376
-#: includes/hooks.php:2444
+#: includes/hooks.php:2197 includes/hooks.php:2245 includes/hooks.php:2381
+#: includes/hooks.php:2449
 msgid "Add New Forum"
 msgstr ""
 
-#: includes/hooks.php:2199 includes/hooks.php:2383
+#: includes/hooks.php:2204 includes/hooks.php:2388
 msgid "Add New User Group"
 msgstr ""
 
-#: includes/hooks.php:2206 includes/hooks.php:2324 includes/hooks.php:2390
-#: includes/hooks.php:2487
+#: includes/hooks.php:2211 includes/hooks.php:2329 includes/hooks.php:2395
+#: includes/hooks.php:2492
 msgid "Add New Phrase"
 msgstr ""
 
-#: includes/hooks.php:2215 includes/hooks.php:2427
+#: includes/hooks.php:2220 includes/hooks.php:2432
 msgid "Visit Forum"
 msgstr ""
 
-#: includes/hooks.php:2308 includes/hooks.php:2540
+#: includes/hooks.php:2313 includes/hooks.php:2545
 msgid "Add New Usergroup"
 msgstr ""
 
-#: includes/hooks.php:2508
+#: includes/hooks.php:2513
 msgid "Add New Board"
 msgstr ""
 
-#: includes/hooks.php:2681 includes/phrases.php:1086
+#: includes/hooks.php:2686 includes/phrases.php:1086
 #, php-format
 msgid ""
 "IMPORTANT! The forum registration form is probably under risk of spam attacks. "
@@ -5402,17 +5403,17 @@ msgid ""
 "dismiss this message."
 msgstr ""
 
-#: includes/hooks.php:2711
+#: includes/hooks.php:2716
 msgid "wpForo Polls addon is disabled!"
 msgstr ""
 
-#: includes/hooks.php:2711
+#: includes/hooks.php:2716
 msgid ""
 " Your addon version is not compatible with the current version of wpForo. "
 "Please update the addon or downgrade wpForo to 1.7.7"
 msgstr ""
 
-#: includes/hooks.php:2712
+#: includes/hooks.php:2717
 msgid "dismiss"
 msgstr ""
 
@@ -6540,6 +6541,10 @@ msgstr ""
 msgid "Enable Output Buffer"
 msgstr ""
 
+#: includes/phrases.php:272
+msgid "Enter description here . . ."
+msgstr ""
+
 #: includes/phrases.php:274
 msgid "Enter title here"
 msgstr ""
@@ -6811,7 +6816,7 @@ msgstr ""
 msgid "Must be minimum 6 characters."
 msgstr ""
 
-#: includes/phrases.php:376 widgets/Profile.php:20 widgets/Profile.php:120
+#: includes/phrases.php:376 widgets/Profile.php:20 widgets/Profile.php:119
 msgid "My Profile"
 msgstr ""
 
@@ -6849,8 +6854,8 @@ msgstr ""
 msgid "No topics were found here"
 msgstr ""
 
-#: includes/phrases.php:396 widgets/OnlineMembers.php:97
-#: widgets/RecentPosts.php:294 widgets/RecentTopics.php:205 widgets/Tags.php:97
+#: includes/phrases.php:396 widgets/OnlineMembers.php:98
+#: widgets/RecentPosts.php:306 widgets/RecentTopics.php:216 widgets/Tags.php:108
 msgid "Number of Items"
 msgstr ""
 
@@ -8801,7 +8806,7 @@ msgid "Default avatar"
 msgstr ""
 
 #: includes/phrases.php:1064 widgets/Profile.php:21 widgets/Profile.php:40
-#: widgets/Profile.php:121
+#: widgets/Profile.php:120
 msgid "Join Us!"
 msgstr ""
 
@@ -9521,7 +9526,7 @@ msgid ""
 "Forums &raquo; Moderation admin page."
 msgstr ""
 
-#: widgets/Forums.php:97
+#: widgets/Forums.php:108
 msgid "Display as dropdown"
 msgstr ""
 
@@ -9529,54 +9534,54 @@ msgstr ""
 msgid "Online Members"
 msgstr ""
 
-#: widgets/OnlineMembers.php:91
+#: widgets/OnlineMembers.php:92
 msgid "User Groups"
 msgstr ""
 
-#: widgets/OnlineMembers.php:101 widgets/RecentPosts.php:305
-#: widgets/RecentTopics.php:209
+#: widgets/OnlineMembers.php:102 widgets/RecentPosts.php:317
+#: widgets/RecentTopics.php:220
 msgid "Display with avatars"
 msgstr ""
 
-#: widgets/OnlineMembers.php:110 widgets/RecentPosts.php:339
-#: widgets/RecentTopics.php:227
+#: widgets/OnlineMembers.php:111 widgets/RecentPosts.php:351
+#: widgets/RecentTopics.php:238
 msgid "Auto Refresh Interval Seconds"
 msgstr ""
 
-#: widgets/OnlineMembers.php:112 widgets/RecentPosts.php:302
-#: widgets/RecentPosts.php:341 widgets/RecentTopics.php:229
+#: widgets/OnlineMembers.php:113 widgets/RecentPosts.php:314
+#: widgets/RecentPosts.php:353 widgets/RecentTopics.php:240
 msgid "Set 0 to disable autorefresh"
 msgstr ""
 
-#: widgets/Profile.php:130
+#: widgets/Profile.php:129
 msgid "Title for Users"
 msgstr ""
 
-#: widgets/Profile.php:137
+#: widgets/Profile.php:136
 msgid "Title for Guests"
 msgstr ""
 
-#: widgets/Profile.php:144
+#: widgets/Profile.php:143
 msgid "Hide avatar"
 msgstr ""
 
-#: widgets/Profile.php:151
+#: widgets/Profile.php:150
 msgid "Hide user name"
 msgstr ""
 
-#: widgets/Profile.php:158
+#: widgets/Profile.php:157
 msgid "Hide notification bell"
 msgstr ""
 
-#: widgets/Profile.php:165
+#: widgets/Profile.php:164
 msgid "Hide user data"
 msgstr ""
 
-#: widgets/Profile.php:172
+#: widgets/Profile.php:171
 msgid "Hide buttons"
 msgstr ""
 
-#: widgets/Profile.php:179
+#: widgets/Profile.php:178
 msgid "Hide this widget for guests"
 msgstr ""
 
@@ -9596,39 +9601,39 @@ msgstr ""
 msgid "ASC"
 msgstr ""
 
-#: widgets/RecentPosts.php:243 widgets/RecentTopics.php:164
+#: widgets/RecentPosts.php:255 widgets/RecentTopics.php:175
 msgid "Filter by forums"
 msgstr ""
 
-#: widgets/RecentPosts.php:259 widgets/RecentTopics.php:180
+#: widgets/RecentPosts.php:271 widgets/RecentTopics.php:191
 msgid "Autofilter by current forum"
 msgstr ""
 
-#: widgets/RecentPosts.php:268 widgets/RecentTopics.php:189
+#: widgets/RecentPosts.php:280 widgets/RecentTopics.php:200
 msgid "Order by"
 msgstr ""
 
-#: widgets/RecentPosts.php:286
+#: widgets/RecentPosts.php:298
 msgid "Limit Per Topic"
 msgstr ""
 
-#: widgets/RecentPosts.php:291
+#: widgets/RecentPosts.php:303
 msgid "set 0 to remove this limit"
 msgstr ""
 
-#: widgets/RecentPosts.php:300
+#: widgets/RecentPosts.php:312
 msgid "Excerpt Length"
 msgstr ""
 
-#: widgets/RecentPosts.php:314
+#: widgets/RecentPosts.php:326
 msgid "Exclude First Posts"
 msgstr ""
 
-#: widgets/RecentPosts.php:322
+#: widgets/RecentPosts.php:334
 msgid "Display Only Unread Posts"
 msgstr ""
 
-#: widgets/RecentPosts.php:330
+#: widgets/RecentPosts.php:342
 msgid "Display [new] indicator"
 msgstr ""
 
@@ -9640,7 +9645,7 @@ msgstr ""
 msgid "Views Count"
 msgstr ""
 
-#: widgets/RecentTopics.php:218
+#: widgets/RecentTopics.php:229
 msgid "Refer topics to first unread post"
 msgstr ""
 
@@ -9648,7 +9653,7 @@ msgstr ""
 msgid "Forum Search"
 msgstr ""
 
-#: widgets/Tags.php:88
+#: widgets/Tags.php:99
 msgid "Topic Counts"
 msgstr ""
 

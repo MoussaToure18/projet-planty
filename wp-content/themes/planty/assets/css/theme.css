@@ -80,3 +80,32 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.fleur {
+    background-image: url('../img/group4');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px 300px;
+    background-position: calc(80% - 400px) center, calc(106% - 400px) center;
+
+}
+
+
+
+
+@media screen and (max-width: 475px) {
+    /* #header {
+        display: flex none;
+
+
+    }
+
+    .menu-menu-container {
+        display: flex none;
+    }*/
+
+    .menu-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

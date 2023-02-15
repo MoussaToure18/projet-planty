@@ -48,7 +48,7 @@
               </div>
               <div class="wpforo-topic-avatar">
                   <?php if( WPF()->usergroup->can('va') && wpforo_setting( 'profiles', 'avatars' ) ): ?>
-                      <?php echo WPF()->member->avatar($member, 'alt="'.esc_attr($member['display_name']).'"', 60) ?>
+                      <?php echo wpforo_user_avatar($member, 60) ?>
                   <?php endif; ?>
               </div>
               <div class="wpforo-topic-details">

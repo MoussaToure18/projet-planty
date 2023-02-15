@@ -23,7 +23,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
         <div class="topic-wrap <?php wpforo_unread( $topic['topicid'], 'topic' ) ?>">
             <div class="wpforo-topic">
 				<?php if( WPF()->usergroup->can( 'va' ) && wpforo_setting( 'profiles', 'avatars' ) ): ?>
-                    <div class="wpforo-topic-avatar"><?php echo WPF()->member->avatar( $member ) ?></div>
+                    <div class="wpforo-topic-avatar"><?php echo wpforo_user_avatar( $member ) ?></div>
 				<?php endif; ?>
                 <div class="wpforo-topic-info">
                     <p class="wpforo-topic-title"><?php wpforo_topic_title( $topic, $topic_url, '{i}{p}{au}{tc}{/a}{n}{v}' ) ?></p>

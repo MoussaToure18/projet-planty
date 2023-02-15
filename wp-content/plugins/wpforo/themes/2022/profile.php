@@ -22,7 +22,7 @@ if( !wpforo_setting('profiles', 'avatars') ): ?>
         <div class="wpforo-profile-head-panel">
             <?php if( WPF()->usergroup->can( 'va' ) && wpforo_setting( 'profiles', 'avatars' ) ): ?>
                 <div class="wpf-profile-avatar">
-                    <?php echo wpforo_user_avatar( $user, 150, 'alt="' . esc_attr( wpforo_user_dname( $user ) ) . '"', true ); ?>
+                    <?php echo wpforo_user_avatar( $user, 150, '', true ); ?>
                     <div class="wpf-profile-online"><?php WPF()->member->show_online_indicator( $user['userid'] ) ?></div>
                 </div>
             <?php endif; ?>

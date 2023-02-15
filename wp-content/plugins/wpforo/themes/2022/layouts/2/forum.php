@@ -95,13 +95,7 @@ $cover_styles = wpforo_get_forum_cover_styles( $cat );
                             <?php $member = wpforo_member($last_post) ?>
                             <?php if( WPF()->usergroup->can('va') && wpforo_setting( 'profiles', 'avatars' ) ): ?>
                                 <div class="wpforo-last-post-avatar">
-                                    <?php if( isset($member['profile_url']) && $member['profile_url'] ): ?>
-                                        <a href="<?php echo esc_url($member['profile_url']) ?>">
-                                            <?php echo WPF()->member->get_avatar($forum['last_userid'], 'alt="'.esc_attr($member['display_name']).'" title="'.esc_attr($member['display_name']).'"', 38) ?>
-                                        </a>
-                                    <?php elseif( wpfval($member, 'display_name') ): ?>
-                                        <?php echo WPF()->member->avatar($member, 'alt="'.esc_attr($member['display_name']).'" title="'.esc_attr($member['display_name']).'"', 38) ?>
-                                    <?php endif; ?>
+                                    <?php wpforo_member_link( $member, '', 96, '', true, 'avatar' ) ?>
                                 </div>
                             <?php endif; ?>
                             <div class="wpforo-last-post">

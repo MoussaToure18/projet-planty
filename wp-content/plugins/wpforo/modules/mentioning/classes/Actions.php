@@ -21,10 +21,8 @@ class Actions {
 			'#@([^\s\0<>\[\]!,.()\'\"|?@]+)($|[\s\0<>\[\]!,.()\'\"|?@])#iu',
 			function( $match ) {
 				$return = $match[0];
-				if( $member = WPF()->member->get_member( $match[1] ) ) {
-					$href   = WPF()->member->get_profile_url( $member );
-					$dname  = wpforo_user_dname( $member );
-					$return = sprintf( '<a href="%s" title="%s">@%s</a>%s', $href, $dname, $match[1], $match[2] );
+				if( $user = WPF()->member->get_member( $match[1] ) ) {
+					$return = wpforo_member_link( $user, '', 30, '', false, '@' . $match[1] ) . $match[2];
 				}
 
 				return $return;

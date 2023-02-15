@@ -19,7 +19,7 @@ $members = WPF()->current_object['members'];
                     <div class="wpforo-member-head">
                         <?php if( WPF()->usergroup->can( 'va' ) && wpforo_setting( 'profiles', 'avatars' ) ): ?>
                             <div class="wpf-member-avatar">
-                                <a href="<?php echo esc_url_raw($member['profile_url']) ?>"><?php echo WPF()->member->avatar( $member ); ?></a>
+                                <?php wpforo_member_link( $member, '', 96, '', true, 'avatar' ) ?>
                                 <div class="wpf-member-online"><?php WPF()->member->show_online_indicator( $member['userid'] ) ?></div>
                             </div>
                         <?php endif; ?>

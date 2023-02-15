@@ -23,11 +23,10 @@ $members = WPF()->current_object['members'];
 					foreach( $members as $member ) : ?>
                         <tr<?php echo( $bg ? ' style="background:#F7F7F7"' : '' ) ?>>
 							<?php if( WPF()->usergroup->can( 'va' ) && wpforo_setting( 'profiles', 'avatars' ) ): ?>
-                                <td class="wpf-members-avatar"><?php echo WPF()->member->avatar( $member ); ?></td>
+                                <td class="wpf-members-avatar"><?php echo wpforo_user_avatar( $member ); ?></td>
 							<?php endif; ?>
                             <td class="wpf-members-info">
                                 <span style="font-size:16px;"><?php WPF()->member->show_online_indicator( $member['userid'] ) ?>&nbsp;</span>
-								<?php $member['profile_url'] = esc_url( WPF()->member->get_profile_url( $member ) ) ?>
 								<?php wpforo_member_link( $member, '', 50, ' wpf-member-name ' ); ?> <?php wpforo_member_nicename( $member, '@' ); ?>
 								<?php do_action( 'wpforo_after_member_badge', $member ) ?><br>
 								<?php $enabled_for_usergroup = in_array( $member['groupid'], wpforo_setting( 'rating', 'rating_badge_ug' ), true ); ?>

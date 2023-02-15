@@ -11,7 +11,7 @@ $user = wpforo_get_current_object_user();
 		$secondary_group_names = ( $user['secondary_groupids'] ) ? WPF()->usergroup->get_secondary_group_names( $user['secondary_groupids'] ) : [];
 		?>
         <div class="wpforo-profile-head-wrap">
-			<?php $avatar_image_html = wpforo_user_avatar( $user, 150, 'alt="' . esc_attr( wpforo_user_dname( $user ) ) . '"', true );
+			<?php $avatar_image_html = wpforo_user_avatar( $user, 150, '', true );
 			$avatar_image_url        = wpforo_avatar_url( $avatar_image_html );
 			$bg                      = ( $avatar_image_url ) ? "background-image:url('" . esc_url( $avatar_image_url ) . "');" : ''; ?>
             <div class="wpforo-profile-head-bg" style="<?php echo $bg ?>">

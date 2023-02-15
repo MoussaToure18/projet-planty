@@ -9,7 +9,6 @@ $rating_level = wpfval( WPF()->current_object['user'], 'rating', 'level' );
 ?>
 
 <div class="wpforo-profile-home">
-
     <?php if( WPF()->usergroup->can( 'vmr' ) ): ?>
         <div class="wpf-profile-section wpf-section-stat">
             <div class="wpf-stat-wrap">
@@ -112,6 +111,7 @@ $rating_level = wpfval( WPF()->current_object['user'], 'rating', 'level' );
                         <div class="wpf-statbox-title"><?php wpforo_phrase( 'Blog Comments' ) ?></div>
                     </div>
                 </div>
+                <?php do_action( 'wpforo_profile_after_statbox', WPF()->current_object['user'] ); ?>
             </div>
         </div>
     <?php endif; ?>

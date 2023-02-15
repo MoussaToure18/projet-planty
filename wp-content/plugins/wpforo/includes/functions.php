@@ -1848,8 +1848,8 @@ function wpforo_is_users_same( $user1, $user2 = null ){
  * @return string
  */
 function wpforo_user_dname( $user, $echo = false ) {
-	$display_name  = trim( wpfval( $user, 'display_name' ) );
-	$user_nicename = trim( wpfval( $user, 'user_nicename' ) );
+	$display_name  = trim( (string) wpfval( $user, 'display_name' ) );
+	$user_nicename = trim( (string) wpfval( $user, 'user_nicename' ) );
 	$dname         = esc_html( $display_name ) ?: ( esc_html( urldecode( $user_nicename ) ) ?: wpforo_phrase( 'Anonymous', false ) );
 	if( $echo ) echo $dname;
 	return $dname;
@@ -1946,7 +1946,7 @@ function wpforo_sprintf_array( $format, $arr ) {
 }
 
 function wpforo_avatar_url( $avatar_html ) {
-	if( preg_match( '#src=[\'"]([^\'"]+?)[\'"]#isu', $avatar_html, $matches ) ) {
+	if( preg_match( '#src=[\'"]([^\'"]+?)[\'"]#iu', $avatar_html, $matches ) ) {
 		return $matches[1];
 	}
 
@@ -2970,7 +2970,7 @@ function _wpforo_apply_email_shortcodes( $txt, $args ){
 				if ( ! $value || ! ( is_string( $value ) || is_numeric( $value ) ) ) {
 					$value = '';
 				}elseif ( $shortcode === '[topic_body]' ) {
-					$value = wpforo_text( wpforo_kses( $value, 'email' ), $body_length, false, false, false, true, false );
+					$value = wpforo_text( wpforo_kses( wpforo_content_filter( $value ), 'email' ), $body_length, false, false, false, true, false );
 				}
 			}
 		} elseif ( strpos( $shortcode, '[post_' ) === 0 ) {
@@ -2979,7 +2979,7 @@ function _wpforo_apply_email_shortcodes( $txt, $args ){
 				if ( ! $value || ! ( is_string( $value ) || is_numeric( $value ) ) ) {
 					$value = '';
 				}elseif ( $shortcode === '[post_body]' ) {
-					$value = wpforo_text( wpforo_kses( $value, 'email' ), $body_length, false, false, false, true, false );
+					$value = wpforo_text( wpforo_kses( wpforo_content_filter( $value ), 'email' ), $body_length, false, false, false, true, false );
 				}
 			}
 		}

@@ -24,7 +24,7 @@
           <div class="topic-wrap <?php wpforo_unread($topic['topicid'], 'topic'); ?>">
               <div class="wpforo-topic">
 				  <?php if( WPF()->usergroup->can('va') && wpforo_setting( 'profiles', 'avatars' ) ): ?>
-                      <div class="wpforo-topic-avatar"><?php echo WPF()->member->avatar($member, 'alt="'.esc_attr($member['display_name']).'"', 48) ?></div>
+                      <div class="wpforo-topic-avatar"><?php echo wpforo_user_avatar($member, 48) ?></div>
                   <?php endif; ?>
                   <div class="wpforo-topic-info">
                     <div class="wpforo-topic-title"><?php wpforo_topic_title($topic, $topic_url, '{i}{p}{au}{t}{/a}{n}{v}') ?></div>

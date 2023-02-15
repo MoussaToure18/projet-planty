@@ -16,16 +16,14 @@ $follows = (array) wpfval( WPF()->current_object, 'follows' );
             foreach( $follows as $follow ) {
 	            if( $follow['itemtype'] === 'user' ) {
 		            if( $user = WPF()->member->get_member( $follow['itemid'] ) ){
-			            $user_url = WPF()->member->get_profile_url( $user['userid'] );
 			            printf(
 				            '<div class="wpforo-follower">
-                                <div class="follower-avatar"><a href="%2$s">%1$s</a></div>
-                                <div class="follower-title"><a href="%2$s">%3$s</a></div>
-                                <div class="sbn-action">%4$s</div>
+                                <div class="follower-avatar">%1$s</div>
+                                <div class="follower-title">%2$s</div>
+                                <div class="sbn-action">%3$s</div>
                             </div>',
-				            WPF()->member->get_avatar( $user['userid'], 'width="64"', 64 ),
-				            esc_url( $user_url ),
-				            esc_html( wpforo_user_dname( $user ) ),
+				            wpforo_member_link( $user, '', 64, '', false, 'avatar' ),
+				            wpforo_member_link( $user, '', 30, '', false ),
 				            (
                                 ( WPF()->current_object['user_is_same_current_user'] || wpforo_current_user_is( 'admin' ) )
                                 ? sprintf(

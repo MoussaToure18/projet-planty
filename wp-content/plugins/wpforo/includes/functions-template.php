@@ -529,34 +529,40 @@ function wpforo_tag( $tagid, $var = 'item', $echo = false ) {
 	return $tag;
 }
 
-function wpforo_member_link( $member, $prefix = '', $length = 30, $class = '', $echo = true ) {
-	$display_name = ( isset( $member['display_name'] ) && $member['display_name'] ) ? $member['display_name'] : wpforo_phrase(
-		'Anonymous',
-		false
-	);
-	$color        = ( isset( $member['group_color'] ) && $member['group_color'] ) ? 'style="color:' . $member['group_color'] . '"' : '';
-	$class        = ( $class ) ? 'class="' . $class . '"' : '';
-	$title        = ( $display_name ) ? 'title="' . esc_attr( $display_name ) . '"' : '';
-	if( wpfval( $member, 'userid' ) && wpfval( $member, 'profile_url' ) ) {
-		$link = '<a href="' . esc_url(
-				$member['profile_url']
-			) . '" ' . $color . ' ' . $class . ' ' . $title . '>' . ( strpos( $prefix, '%s' ) !== false ? sprintf(
-				wpforo_phrase( $prefix, false ),
-				esc_html( wpforo_text( $display_name, $length, false ) )
-			) : ( $prefix ? wpforo_phrase( $prefix, false ) . ' ' : '' ) . ( $length ? esc_html(
-					wpforo_text( $display_name, $length, false )
-				) : esc_html( $display_name ) ) ) . '</a>';
-	} else {
-		$link = ( strpos( $prefix, '%s' ) !== false ? sprintf(
-			wpforo_phrase( $prefix, false ),
-			esc_html( wpforo_text( $display_name, $length, false ) )
-		) : ( ( $prefix ? wpforo_phrase( $prefix, false ) . ' ' : '' ) . ( $length ? esc_html(
-				wpforo_text( $display_name, $length, false )
-			) : esc_html( $display_name ) ) ) );
-	}
+function wpforo_member_link( $user, $prefix = '', $size = 30, $class = '', $echo = true, $content = '', $attr = '' ) {
+	$dname = wpforo_user_dname( $user );
+	$title = $dname ? sprintf( 'title="%1$s"', esc_attr( $dname ) ) : '';
+	$class = $class ? sprintf( 'class="%1$s"', esc_attr( $class ) ) : '';
+	$color = wpfval( $user, 'group_color' ) ? sprintf( 'color: %1$s', $user['group_color'] ) : '';
+    if( $content === 'avatar' ){
+        $ret = wpforo_user_avatar( $user, $size, $attr );
+    }elseif( trim( $content ) ){
+        $ret = $content;
+    }else{
+	    $ret = ( strpos( $prefix, '%s' ) !== false ? sprintf( wpforo_phrase( $prefix, false ), esc_html( wpforo_text( $dname, $size, false ) ) ) : ( $prefix ? wpforo_phrase( $prefix, false ) . ' ' : '' ) . esc_html( wpforo_text( $dname, $size, false ) ) );
+    }
 
-	if( $echo ) echo $link;
-	return $link;
+    if( apply_filters( 'wpforo_member_link_clickable', true, $user ) && wpfval( $user, 'userid' ) && wpfval( $user, 'profile_url' ) ){
+	    $ret = sprintf(
+		    '<a href="%1$s" style="%2$s" %3$s %4$s>%5$s</a>',
+		    esc_url( $user['profile_url'] ),
+		    $color,
+		    $class,
+		    $title,
+		    $ret
+	    );
+    }else{
+        $ret = sprintf(
+            '<a style="cursor: auto; %1$s" %2$s %3$s>%4$s</a>',
+	        $color,
+	        $class,
+	        $title,
+	        $ret
+        );
+    }
+
+	if( $echo ) echo $ret;
+	return $ret;
 }
 
 add_shortcode( 'wpforo-lostpassword', function() {
@@ -718,25 +724,13 @@ function wpforo_fields( $fields, $echo = true ) {
 	}
 }
 
-function wpforo_user_avatar( $user, $size, $attr = '', $lastmod = false ) {
-	$avatar_html = '';
-	if( is_numeric( $user ) && $user ) {
-		$avatar_html = ( $size ) ? get_avatar( $user, $size ) : get_avatar( $user );
-		if( $attr ) $avatar_html = str_replace( '<img', '<img ' . $attr, $avatar_html );
-	} elseif( is_array( $user ) && ! empty( $user ) ) {
-		$avatar_html = WPF()->member->avatar( $user, $attr, $size );
+function wpforo_user_avatar( $user, $size = 96, $attr = '', $lastmod = false ) {
+	$img = WPF()->member->get_avatar( $user, $size, $attr );;
+	if ( $lastmod && ( $url = wpforo_avatar_url( $img ) ) && strpos( $url, '?' ) === false ) {
+		$img = str_replace( $url, $url . '?lm=' . time(), $img );
 	}
 
-	if( $lastmod ) {
-		$url = wpforo_avatar_url( $avatar_html );
-		if( $url ) {
-			if( strpos( $url, '?' ) === false ) {
-				$avatar_html = str_replace( $url, $url . '?lm=' . time(), $avatar_html );
-			}
-		}
-	}
-
-	return $avatar_html;
+	return $img;
 }
 
 function wpforo_signature( $member, $args = [] ) {
@@ -1671,13 +1665,13 @@ function wpforo_thread( $topicid ){
         $thread['users_html'] .= '<div class="wpf-thread-users-avatars">';
         if( $thread['usergroup_can_va'] && $thread['feature_avatars'] ) {
             if( !empty( $thread['user'] ) ) {
-                $thread['user_avatar'] = WPF()->member->avatar($thread['user'], 'alt="'.esc_attr($thread['user']['display_name']).'"', 40);
+                $thread['user_avatar'] = wpforo_user_avatar($thread['user'], 40);
                 $thread['users_html'] .= '<div class="wpf-circle wpf-m">
                         <a href="' . esc_url( $thread['url'] ) . '" wpf-tooltip="' . $thread['user_info'] . '" wpf-tooltip-position="top" wpf-tooltip-size="medium">' . $thread['user_avatar'] . '</a>
                     </div>';
             }
             if( $thread['replies'] && !empty( $thread['last_user'] ) ) {
-                $thread['last_user_avatar'] = WPF()->member->avatar($thread['last_user'], 'alt="'.esc_attr($thread['last_user']['display_name']).'"', 24);
+                $thread['last_user_avatar'] = wpforo_user_avatar($thread['last_user'], 24);
                 $thread['users_html'] .= '<div class="wpf-circle wpf-s">
                         <a href="' . esc_url( $thread['last_post_url'] ) . '" wpf-tooltip="' . $thread['reply_user_info'] . '" wpf-tooltip-position="top" wpf-tooltip-size="medium">' . $thread['last_user_avatar'] . '</a>
                     </div>';
@@ -1690,7 +1684,7 @@ function wpforo_thread( $topicid ){
         $thread['author_html'] = '<div class="wpf-thread-users-avatars">';
         if( $thread['usergroup_can_va'] && $thread['feature_avatars'] ) {
             if( !empty( $thread['user'] ) ) {
-                $thread['user_avatar'] = WPF()->member->avatar($thread['user'], 'alt="'.esc_attr($thread['user']['display_name']).'"', 40);
+                $thread['user_avatar'] = wpforo_user_avatar($thread['user'], 40);
                 $thread['author_html'] .= '<a href="' . esc_url( $thread['url'] ) . '" wpf-tooltip="' . esc_attr(wpfval($thread['user'], 'display_name')) . '" wpf-tooltip-position="top" wpf-tooltip-size="medium">' . $thread['user_avatar'] . '</a>';
             }
         } else {
@@ -1699,10 +1693,10 @@ function wpforo_thread( $topicid ){
 
         if( $thread['usergroup_can_va'] && $thread['feature_avatars'] ) {
             if( $thread['replies'] && !empty( $thread['last_user'] ) ) {
-                $thread['last_user_avatar'] = WPF()->member->avatar($thread['last_user'], 'alt="'.esc_attr($thread['last_user']['display_name']).'"', 40);
+                $thread['last_user_avatar'] = wpforo_user_avatar($thread['last_user'], 40);
                 $thread['reply_html'] = '<i class="fas fa-reply fa-rotate-180"></i> <a href="' . esc_url( $thread['last_post_url'] ) . '" wpf-tooltip="' . $thread['reply_user_info'] . '" wpf-tooltip-position="top" wpf-tooltip-size="medium">' . $thread['last_user_avatar'] . '</a>';
             } else {
-                $thread['user_avatar'] = WPF()->member->avatar($thread['user'], 'alt="'.esc_attr($thread['user']['display_name']).'"', 40);
+                $thread['user_avatar'] = wpforo_user_avatar($thread['user'], 40);
                 $thread['reply_html'] = '<i class="fas fa-feather-alt"></i> <a href="' . esc_url( $thread['url'] ) . '" wpf-tooltip="' . esc_attr(wpfval($thread['user'], 'display_name')) . '" wpf-tooltip-position="top" wpf-tooltip-size="medium">' . $thread['user_avatar'] . '</a>';
             }
         }
@@ -1746,7 +1740,7 @@ function wpforo_thread_breadcrumb( $post = [], $parents = [] ) {
 		$parent      = wpforo_post( $post['parentid'] );
 		$member      = wpforo_member( $parent );
 		$parent_url  = ( wpfval( $parent, 'url' ) ) ? $parent['url'] : '#post-' . $parent['parentid'];
-		$avatar      = ( wpforo_setting('profiles', 'avatars') ) ? WPF()->member->avatar( $member, 'alt="' . esc_attr( $member['display_name'] ) . '"', 18 ) : '&nbsp;';
+		$avatar      = ( wpforo_setting('profiles', 'avatars') ) ? wpforo_user_avatar( $member, 18 ) : '&nbsp;';
 		$member_name = ( wpfval( $member, 'display_name' ) ) ? $member['display_name'] : wpforo_phrase(
 			'Guest',
 			false
@@ -1776,7 +1770,7 @@ function wpforo_thread_breadcrumb( $post = [], $parents = [] ) {
 								wpforo_phrase( 'Reply by', false ) . ' ' . $name
 							) . '" wpf-tooltip-size="medium"';
 						$parent_url = ( wpfval( $parent, 'url' ) ) ? $parent['url'] : '#post-' . $parent['parentid'];
-						$avatar     = ( wpforo_setting('profiles', 'avatars') ) ? WPF()->member->avatar( $member, 'alt="' . esc_attr( $member['display_name'] ) . '"', 18 ) : '&nbsp;&nbsp;&nbsp;' . $name;
+						$avatar     = ( wpforo_setting('profiles', 'avatars') ) ? wpforo_user_avatar( $member, 18 ) : '&nbsp;&nbsp;&nbsp;' . $name;
 						if( ! $gab ) $html .= '<i class="fas fa-angle-right wpf-tree-sep"></i>';
 						$html .= '<div class="wpf-tree-item' . $class . '" ' . $tooltip . '><a href="' . esc_url(
 								$parent_url

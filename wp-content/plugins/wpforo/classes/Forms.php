@@ -738,7 +738,7 @@ class Forms {
 
 	public function field_secondary_groups( $f ) {
 		$field_html = '';
-		if( $groups = WPF()->usergroup->get_secondary_usergroups() ) {
+		if( $groups = WPF()->usergroup->get_secondary_groups() ) {
 			$allowed_groupids = (array) wpfval( $f, 'allowedGroupIds' );
 			$i                = 0;
 			$field_html       .= '<input type="hidden" name="' . esc_attr( $f['fieldName'] ) . '" value="">';

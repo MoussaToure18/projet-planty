@@ -114,10 +114,8 @@ function wpforo_topic_active_participants( $topicid ){
 		$user = wpforo_member( $users_stats['userid'] );
         if( $user && WPF()->usergroup->can( 'va' ) && wpforo_setting( 'profiles', 'avatars' ) ){
             $html .= sprintf(
-                '<div class="wpf-tmi-user-avatar"><a href="%1$s" title="%2$s">%3$s</a><div class="wpf-tmi-user-posts">%4$d</div></div>',
-                $user['profile_url'],
-                wpforo_user_dname( $user ),
-                WPF()->member->avatar( $user, 'alt="' . esc_attr( $user['display_name'] ) . '"', 48 ),
+                '<div class="wpf-tmi-user-avatar">%1$s<div class="wpf-tmi-user-posts">%2$d</div></div>',
+                wpforo_member_link( $user, '', 96, '', false, 'avatar'),
                 $users_stats['posts']
             );
         }
@@ -205,7 +203,7 @@ function wpforo_thread_tree_item($postid, $level, $post = array(), $member = arr
     if(empty($member)) $member = wpforo_member($post['userid']);
     return '<li><div class="wpf-tmi-item">' . ( $level > 0 ? '<span class="wpf-tmi-boxh"> &boxur; &boxh;</span>' : '' )
         . str_repeat('<span class="wpf-tmi-boxh"> &boxhu; &boxh;</span>', $repeate)
-        . WPF()->member->avatar( $member, 'alt="'.esc_attr( wpforo_user_dname($member)).'"', 20 )
+        . wpforo_user_avatar( $member, 20 )
         . ' ' . wpforo_member_link($member, '', 7, 'wpfto-author', false)
         . ' &nbsp;&nbsp;<span class="wpfto-date">' . wpforo_date($post['created'], 'ago-date', false) . ' &nbsp;&bullet;&nbsp; </span>'
         . '<span class="wpf-link wpf-tmi-item-body-excerpt" data-postid="'. $postid .'">' . wpforo_text($post['body'], 70, false) . '</span>'
@@ -220,7 +218,7 @@ function wpforo_l2_print_avatars( $userids ){
 			if( ! ( $k < $ulimit ) ) break;
 			$user = wpforo_member( $userid );
 			if( wpforo_setting( 'profiles', 'avatars' ) && WPF()->usergroup->can('va') ){
-				echo WPF()->member->avatar( $user, 'alt="'.esc_attr( wpforo_user_dname( $user ) ).'"', 40 );
+				echo wpforo_user_avatar( $user, 40 );
 			}
 		}
 	}

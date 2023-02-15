@@ -263,7 +263,7 @@ class UserGroups {
 
 	public function _get_usergroups( $field = 'full' ) {
 		if( $field === 'full' ) {
-			$groups = WPF()->db->get_results( "SELECT * FROM `" . WPF()->tables->usergroups . "`", ARRAY_A );
+			$groups = (array) WPF()->db->get_results( "SELECT * FROM `" . WPF()->tables->usergroups . "`", ARRAY_A );
 		} else {
 			$groups = WPF()->db->get_col( "SELECT `$field` FROM `" . WPF()->tables->usergroups . "`" );
 		}
@@ -336,7 +336,18 @@ class UserGroups {
 		return [];
 	}
 
+	/**
+	 * @deprecated since 2.1.6, instead of this method you can use $this->get_secondary_groups()
+	 */
 	function get_secondary_usergroups() {
+		return $this->get_secondary_groups();
+	}
+
+	function get_secondary_groups() {
+		return wpforo_ram_get( [ $this, '_get_secondary_groups' ] );
+	}
+
+	function _get_secondary_groups() {
 		return (array) WPF()->db->get_results( "SELECT * FROM `" . WPF()->tables->usergroups . "` WHERE `groupid` NOT IN(1,2,4) AND `secondary` = 1", ARRAY_A );
 	}
 

@@ -111,7 +111,7 @@ $cover_styles = wpforo_get_forum_cover_styles( $cat );
                                         <?php wpforo_topic_title($topic, $last_post['url'], '{i}{p}{au}{tc}{/a}{n}', true, '', wpforo_setting( 'forums', 'layout_extended_intro_topics_length' )) ?>
                                     </div>
                                     <div class="wpforo-last-topic-avatar">
-                                        <?php echo WPF()->member->avatar( $member, 'alt="'.esc_attr($member['display_name']).'"', 30 ) ?>
+                                        <?php echo wpforo_user_avatar( $member, 30 ) ?>
                                     </div>
                                     <div class="wpforo-last-topic-user" title="<?php echo esc_attr($member['display_name']) ?>">
                                         <?php wpforo_member_link($member, 'by', 12); ?><br>

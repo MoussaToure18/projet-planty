@@ -3,7 +3,7 @@ Contributors: gVectors Team
 Tags: forum, forums, forum plugin, WordPress forum plugin, community, discussion
 Requires at least: 5.1
 Tested up to: 6.1
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 Requires PHP: 5.6 and higher
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -169,10 +169,17 @@ IMPORTANT NOTES for UPDATE
  - After the update, please flush Redis Object Cache if you have this cache enabled
 
 
-= wpForo Forum 2.1.0 - 2.1.5 | 28.12.2022 =
+= wpForo Forum 2.1.0 - 2.1.6 | 01.02.2023 =
 
 [wpForo Forum v2.1 Release Summary](https://wpforo.com/community/wpforo-announcements/wpforo-2-1-0-is-released/)
 
+* Version 2.1.6
+* Updated: New attribute `boardid` in wpForo shortcodes
+* Fixed Bug: Missing tooltip on post-link buttons
+* Fixed Bug: Different location of pagination button location for guests and users
+* Fixed Bug: Pagination information in SEO title of profile activity section
+* Fixed Bug: Lots of other minor bugs have been fixed.
+* --------
 * Version 2.1.5
 * Added: Rich editor for forum description
 * Added: do_shortcode() in wpForo email templates

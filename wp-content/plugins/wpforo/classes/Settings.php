@@ -126,12 +126,13 @@ class Settings {
 				},
 				"options"              => [
 					"admin_bar"      => [
-						"type"                 => "usergroups",
+						"type"                 => "checkbox",
 						"label"                => esc_html__( "Show Admin Bar for Usergroups", "wpforo" ),
 						"label_original"       => "Show Admin Bar for Usergroups",
 						"description"          => esc_html__( "This option displays the top black bar for accessing to the dashboard. Make sure the regular members can only access to their own profile editing page before enabling this option.", "wpforo" ),
 						"description_original" => "This option displays the top black bar for accessing to the dashboard. Make sure the regular members can only access to their own profile editing page before enabling this option.",
 						"docurl"               => "https://wpforo.com/docs/wpforo-v2/settings/general-settings/#show-admin-bar-for-usergroups",
+                        "variants"             => $this->get_variants_usergroups( 4 ),
 					],
 					"wp_date_format" => [
 						"type"                 => "radio",
@@ -1209,20 +1210,22 @@ class Settings {
 						"docurl"               => "https://wpforo.com/docs/wpforo-v2/settings/member-profile/#member-custom-title",
 					],
 					"title_groupids"           => [
-						"type"                 => "usergroups",
+						"type"                 => "checkbox",
 						"label"                => esc_html__( "Display Member Primary Usergroup", "wpforo" ),
 						"label_original"       => "Display Member Primary Usergroup",
 						"description"          => esc_html__( "The names of selected usergroups will be displayed under the corresponding usergroup's users avatar in forum posts.", "wpforo" ),
 						"description_original" => "The selected usergroup names will be displayed under the corresponding usergroup users avatar in forum posts.",
 						"docurl"               => "https://wpforo.com/docs/wpforo-v2/settings/member-profile/#display-primary-and-secondary-usergroups-under-post-author-avata",
+						"variants"             => $this->get_variants_usergroups(),
 					],
 					"title_secondary_groupids" => [
-						"type"                 => "usergroups",
+						"type"                 => "checkbox",
 						"label"                => esc_html__( "Display Member Secondary Usergroup", "wpforo" ),
 						"label_original"       => "Display Member Secondary Usergroup",
 						"description"          => esc_html__( "The names of selected secondary usergroups will be displayed under the corresponding usergroup's users avatar in forum posts.", "wpforo" ),
 						"description_original" => "The names of selected secondary usergroups will be displayed under the corresponding usergroup's users avatar in forum posts.",
 						"docurl"               => "https://wpforo.com/docs/wpforo-v2/settings/member-profile/#display-primary-and-secondary-usergroups-under-post-author-avata",
+						"variants"             => $this->get_variants_usergroups( [], true ),
 					],
 					"mention_nicknames"        => [
 						"type"                 => "radio",
@@ -1347,20 +1350,22 @@ class Settings {
 						"docurl"               => "https://wpforo.com/docs/wpforo-v2/settings/member-rating/#reputation-point-counting",
 					],
 					"rating_title_ug" => [
-						"type"                 => "usergroups",
+						"type"                 => "checkbox",
 						"label"                => esc_html__( "Enable Reputation Titles for Selected Usergroups", "wpforo" ),
 						"label_original"       => "Enable Reputation Titles for Selected Usergroups",
 						"description"          => esc_html__( "", "wpforo" ),
 						"description_original" => "",
 						"docurl"               => "",
+						"variants"             => $this->get_variants_usergroups(),
 					],
 					"rating_badge_ug" => [
-						"type"                 => "usergroups",
+						"type"                 => "checkbox",
 						"label"                => esc_html__( "Enable Reputation Badges for Selected Usergroups", "wpforo" ),
 						"label_original"       => "Enable Reputation Badges for Selected Usergroups",
 						"description"          => esc_html__( "", "wpforo" ),
 						"description_original" => "",
 						"docurl"               => "",
+						"variants"             => $this->get_variants_usergroups(),
 					],
 					"levels"          => [
 						"type"                 => "ratinglevels",
@@ -2821,7 +2826,6 @@ class Settings {
 	private function get_option_info( $group, $name ) {
 		if( ! ( $setting = wpfval( $this->info->core, $group ) ) && ! ( $setting = wpfval( $this->info->addons, $group ) ) ) return [];
 		if( ! $option = wpfval( $setting, 'options', $name ) ) return [];
-
 		return (array) $option;
 	}
 
@@ -2897,8 +2901,6 @@ class Settings {
 				return $this->radio( $group, $name, $value );
 			case 'checkbox'    :
 				return $this->checkbox( $group, $name, $value );
-			case 'usergroups'  :
-				return $this->usergroups( $group, $name, $value, ( $name === 'title_secondary_groupids' ) );
 			case 'textarea'    :
 				return $this->textarea( $group, $name, $value );
 			case 'textarea_\n' :
@@ -2915,6 +2917,8 @@ class Settings {
 				return $this->other( $group, $name, implode( ",", $value ) );
 			case 'select'      :
 				return $this->select( $group, $name, $value );
+            case 'multiselect'      :
+				return $this->select( $group, $name, $value, true );
             case 'image' :
                 return $this->image( $group, $name, $value );
             case 'cover' :
@@ -2969,24 +2973,6 @@ class Settings {
 			$inputs,
 			$this->get_doc_link( $info )
 		);
-	}
-
-	private function usergroups( $group, $name, $value, $secondary = false ) {
-		if( $secondary ) {
-			$usergroups = WPF()->usergroup->get_secondary_usergroups();
-		} else {
-			$usergroups = WPF()->usergroup->get_usergroups();
-		}
-		if( ! empty( $usergroups ) ) {
-			foreach( $usergroups as $usergroup ) {
-				if( $name === 'admin_bar' && (int) $usergroup['groupid'] === 4 ) continue;
-				$this->info->core[ $group ]['options'][ $name ]['variants'][] = [ 'value' => (int) $usergroup['groupid'], 'label' => $usergroup['name'] ];
-			}
-
-			return $this->checkbox( $group, $name, $value );
-		}
-
-		return '';
 	}
 
 	private function checkbox( $group, $name, $values ) {
@@ -3224,10 +3210,10 @@ class Settings {
 		);
 	}
 
-	private function select( $group, $name, $value ) {
+	private function select( $group, $name, $value, $multi = false ) {
 		if( ! $info = $this->get_option_info( $group, $name ) ) return '';
 		$variants    = $this->get_option_variants( $group, $name, $value );
-		$option_name = $group . '[' . $name . ']';
+		$option_name = $group . '[' . $name . ']' . ( $multi ? '[]' : '' );
 		$options     = '';
 		foreach( $variants as $variant ) {
 			$options .= sprintf(
@@ -3248,16 +3234,17 @@ class Settings {
                 </div>
                 <div class="wpf-opt-input">
                     <div class="wpf-switch-field">
-                        <select id="%2$s" name="%5$s">%6$s</select>
+                        <select id="%2$s" name="%5$s" %6$s>%7$s</select>
                     </div>
                 </div>
-                %7$s
+                %8$s
             </div>',
 			esc_attr( $name ),
 			sanitize_title( $option_name ),
 			$info["label"],
 			$info["description"],
 			esc_attr( $option_name ),
+			( $multi ? 'multiple' : '' ),
 			$options,
 			$this->get_doc_link( $info )
 		);
@@ -3377,6 +3364,22 @@ class Settings {
 		<?php
 		return ob_get_clean();
 	}
+
+	public function get_variants_usergroups( $excludeids = [],  $secondary = false ) {
+        if( ! WPF()->is_installed() ) return [];
+        $variants = [];
+		if( $secondary ) {
+			$groups = WPF()->usergroup->get_secondary_groups();
+		} else {
+			$groups = WPF()->usergroup->get_usergroups();
+		}
+		foreach( $groups as $group ) {
+			if( in_array( (int) $group['groupid'], (array) $excludeids, true ) ) continue;
+			$variants[] = [ 'value' => (int) $group['groupid'], 'label' => $group['name'] ];
+		}
+
+		return $variants;
+    }
 
 	public function init_defaults() {
 		$blogname        = get_option( 'blogname', '' );

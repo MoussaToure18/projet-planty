@@ -320,7 +320,7 @@ function wpforo_meta_title( $title ) {
 	if( is_wpforo_page() ) {
 		$template = WPF()->current_object['template'];
 		if( ! WPF()->current_object['is_404'] ) {
-			$paged = ( WPF()->current_object['paged'] > 1 ) ? ' - ' . wpforo_phrase( 'page', false ) . ' ' . WPF()->current_object['paged'] . ' ' : '';
+			$paged = ( WPF()->current_object['paged'] > 1 ) ? wpforo_phrase( 'page', false ) . ' ' . WPF()->current_object['paged'] . ' ' : '';
 			if( ! empty( WPF()->current_object['forum'] ) ) {
 				$forum = WPF()->current_object['forum'];
 			}
@@ -331,10 +331,10 @@ function wpforo_meta_title( $title ) {
 				$user = WPF()->current_object['user'];
 			}
 			if( isset( $topic['title'] ) && isset( $forum['title'] ) && isset( WPF()->board->get_current( 'settings' )['title'] ) ) {
-				$meta_title = [ $topic['title'] . $paged, $forum['title'], WPF()->board->get_current( 'settings' )['title'] ];
+				$meta_title = [ $topic['title'], $paged, $forum['title'], WPF()->board->get_current( 'settings' )['title'] ];
 				$meta_title = apply_filters( 'wpforo_seo_topic_title', $meta_title );
 			} elseif( ! isset( $topic['title'] ) && isset( $forum['title'] ) && isset( WPF()->board->get_current( 'settings' )['title'] ) ) {
-				$meta_title = [ $forum['title'] . $paged, WPF()->board->get_current( 'settings' )['title'] ];
+				$meta_title = [ $forum['title'], $paged, WPF()->board->get_current( 'settings' )['title'] ];
 				$meta_title = apply_filters( 'wpforo_seo_forum_title', $meta_title );
 			} elseif( ! in_array( $template, ['forum','topic','post'], true ) ) {
 				if( wpforo_is_member_template( $template ) ) {
@@ -343,18 +343,21 @@ function wpforo_meta_title( $title ) {
 							$user['display_name'],
 							wpforo_phrase( ucfirst( $template ), false ),
 							WPF()->board->get_current( 'settings' )['title'],
+                            $paged
 						];
 					} elseif( isset( WPF()->current_object['user_nicename'] ) ) {
 						$meta_title = [
 							WPF()->current_object['user_nicename'],
 							wpforo_phrase( ucfirst( $template ), false ),
 							WPF()->board->get_current( 'settings' )['title'],
+                            $paged
 						];
 					} else {
 						$meta_title = [
 							wpforo_phrase( 'Member', false ),
 							wpforo_phrase( ucfirst( $template ), false ),
 							WPF()->board->get_current( 'settings' )['title'],
+                            $paged
 						];
 					}
 					$meta_title = apply_filters( 'wpforo_seo_profile_title', $meta_title );
@@ -1500,7 +1503,7 @@ function wpforo_userform_to_wpuser_html_form( $wp_user ) {
                     </label>
                 </th>
                 <td style="padding: 15px 20px 10px 20px; vertical-align: top;">
-					<?php $usergroups = WPF()->usergroup->get_secondary_usergroups(); ?>
+					<?php $usergroups = WPF()->usergroup->get_secondary_groups(); ?>
 					<?php if( ! empty( $usergroups ) ): ?>
 						<?php foreach( $usergroups as $usergroup ): ?>
 							<?php if( $usergroup['groupid'] == 1 || $usergroup['groupid'] == 4 ) {
@@ -2179,6 +2182,7 @@ function wpforo_update_usergroup_on_role_change( $userid, $new_role, $old_roles 
 					WPF()->member->set_groupid( $userid, $groupid );
 				}
 			}
+            delete_user_meta( intval( $userid ), '_wpf_member_obj' );
 		}
 	}
 }

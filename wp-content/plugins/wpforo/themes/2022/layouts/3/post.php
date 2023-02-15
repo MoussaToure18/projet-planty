@@ -48,7 +48,7 @@
                             </div>
                             <div class="wpforo-post-author">
                                 <?php if(  WPF()->usergroup->can('va') && wpforo_setting( 'profiles', 'avatars' ) ) : ?>
-                                    <div class="wpforo-post-avatar"><?php echo WPF()->member->avatar($member, 'alt="'.esc_attr($member['display_name']).'"', 96) ?></div>
+                                    <div class="wpforo-post-avatar"><?php echo wpforo_user_avatar($member) ?></div>
                                 <?php endif; ?>
                                 <div class="wpforo-post-author-details">
                                     <div class="wpforo-post-author-name">

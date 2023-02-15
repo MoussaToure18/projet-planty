@@ -29,7 +29,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
             <div class="wpforo-post wpfcl-1">
                 <div class="wpf-left">
 					<?php if( WPF()->usergroup->can( 'va' ) && wpforo_setting( 'profiles', 'avatars' ) ): ?>
-                        <div class="author-avatar"><?php echo WPF()->member->avatar( $member, 'alt="' . esc_attr( $member['display_name'] ) . '"', 80 ) ?></div>
+                        <div class="author-avatar"><?php echo wpforo_user_avatar( $member, 80 ) ?></div>
 					<?php endif ?>
                     <div class="author-data">
                         <div class="author-name"><span><?php WPF()->member->show_online_indicator( $member['userid'] ) ?></span>&nbsp;<?php wpforo_member_link( $member ); ?></div>

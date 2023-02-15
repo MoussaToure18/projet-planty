@@ -48,8 +48,7 @@ class Profile extends WP_Widget {
                     <div class="wpf-prof-header">
 						<?php if( ! wpfval( $instance, 'hide_avatar' ) && wpforo_setting('profiles', 'avatars') ): ?>
                             <div class="wpf-prof-avatar">
-								<?php //echo wpforo_user_avatar( $member['userid'], 80 ); ?>
-                                <?php echo WPF()->member->avatar( $member, 'alt="'.esc_attr($member['display_name']).'"', 80 ); ?>
+                                <?php echo wpforo_user_avatar( $member, 80 ); ?>
                             </div>
 						<?php endif; ?>
 						<?php if( ! wpfval( $instance, 'hide_name' ) ): ?>

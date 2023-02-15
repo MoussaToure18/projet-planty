@@ -15,20 +15,33 @@ class Template {
 
 	public function button( $user ) {
 		$stat = WPF()->sbscrb->Follows->user_is_following_this( WPF()->current_userid, $user['userid'] );
+		$buttons = [];
+		if( WPF()->tpl->can_view_template( 'followers', $user ) ){
+			$buttons[] = sprintf(
+				'<a href="%1$s">
+		            <span class="wpforo-follow-user-followers-count">%2$d</span> 
+		            <span class="wpforo-follow-user-followers-label">%3$s</span>
+		        </a>',
+				WPF()->member->get_profile_url( $user, 'followers' ),
+				WPF()->sbscrb->Follows->get_count( [ 'itemid' => $user['userid'], 'itemtype' => 'user', 'active' => true ] ),
+				wpforo_phrase('Followers', false)
+			);
+		}
+		if( WPF()->tpl->can_view_template( 'following', $user ) ){
+			$buttons[] = sprintf(
+				'<a href="%1$s">
+		            <span class="wpforo-follow-user-following-count">%2$d</span> 
+		            <span class="wpforo-follow-user-following-label">%3$s</span>
+		        </a>',
+				WPF()->member->get_profile_url( $user, 'following' ),
+				WPF()->sbscrb->Follows->get_count( [ 'userid' => $user['userid'], 'itemtype' => 'user', 'active' => true ] ),
+				wpforo_phrase('Following', false)
+			);
+		}
 		return sprintf(
 			'<div class="wpforo-follow-wrap">
 				%1$s
-			    <div class="wpforo-follow-tabs">
-			    	<a href="%2$s">
-			    		<span class="wpforo-follow-user-followers-count">%3$d</span> 
-			    		<span class="wpforo-follow-user-followers-label">%4$s</span>
-			    	</a>
-			    	<span>/</span>
-			    	<a href="%5$s">
-			    		<span class="wpforo-follow-user-following-count">%6$d</span> 
-			    		<span class="wpforo-follow-user-following-label">%7$s</span>
-			    	</a>
-		        </div>
+			    %2$s
 		    </div>',
 			( ! WPF()->current_object['user_is_same_current_user'] ? sprintf(
 				'<div class="wpforo-follow-user" data-userid="%1$d" data-stat="%2$d">
@@ -39,12 +52,7 @@ class Template {
 				intval( $stat ),
 				( $stat ? wpforo_phrase('Unfollow', false) : wpforo_phrase('Follow', false) )
 			) : ''),
-			WPF()->member->get_profile_url( $user, 'followers' ),
-			WPF()->sbscrb->Follows->get_count( [ 'itemid' => $user['userid'], 'itemtype' => 'user', 'active' => true ] ),
-			wpforo_phrase('Followers', false),
-			WPF()->member->get_profile_url( $user, 'following' ),
-			WPF()->sbscrb->Follows->get_count( [ 'userid' => $user['userid'], 'itemtype' => 'user', 'active' => true ] ),
-			wpforo_phrase('Following', false)
+			( $buttons ? sprintf('<div class="wpforo-follow-tabs">%1$s</div>', implode( '<span>/</span>', $buttons ) ) : '' )
 		);
 	}
 }

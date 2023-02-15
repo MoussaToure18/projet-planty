@@ -10,7 +10,7 @@ function wpforo_thread_reply_template( $post, $topic = array(), $forum = array()
         <div class="wpforo-post wpf-child-post wpfcl-1">
             <div class="wpf-reply-head">
                 <?php if( WPF()->usergroup->can('va') && wpforo_setting( 'profiles', 'avatars' ) ): ?>
-                    <div class="wpf-author-avatar"><?php echo WPF()->member->avatar( $member, 'alt="'.esc_attr($member['display_name']).'"', 80 ) ?></div>
+                    <div class="wpf-author-avatar"><?php echo wpforo_user_avatar( $member, 80 ) ?></div>
                 <?php endif ?>
                 <div class="wpf-author">
                     <div class="wpf-author-head">
