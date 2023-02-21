@@ -14,6 +14,7 @@
     list-style: none;
     display: flex;
     margin: 0;
+
 }
 
 #header .main li a {
@@ -82,27 +83,23 @@ body {
 }
 
 .fleur {
-    background-image: url('../img/Group\ 4\ \(4\).png');
+    background-image: url('../img/Group\ 5.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: right 0% bottom 0%;
+
 
 }
 
 
-
-
 @media screen and (max-width: 475px) {
-    /* #header {
-        display: flex none;
 
-
+    #header {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .menu-menu-container {
-        display: flex none;
-    }*/
-
-    .menu-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .plante {
+        display: none;
     }
 }
